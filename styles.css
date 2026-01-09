@@ -259,5 +259,45 @@ body {
   border-radius: 12px;
   font-weight: 500;
 }
+.menu-item {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.item-left {
+  max-width: 75%;
+}
+
+.badges {
+  margin: 6px 0;
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.badge {
+  font-size: 12px;
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-weight: bold;
+  color: white;
+}
+
+.badge.top {
+  background: #f5a623; /* ⭐ */
+}
+
+.badge.wow {
+  background: #e63b5b; /* 🔥 */
+}
+
+.badge.hot {
+  background: #ff7043;
+}
+
+.badge.cold {
+  background: #4fc3f7;
+}
 
 }
