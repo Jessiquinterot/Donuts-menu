@@ -7,12 +7,16 @@ document.addEventListener("DOMContentLoaded", () => {
   /* ===== PROMOS ===== */
   if (path.includes("promos.html")) {
     fetch("promos.json")
-      .then(res => res.json())
+      .then(res => {
+        if (!res.ok) throw new Error("No se pudo cargar promos.json");
+        return res.json();
+      })
       .then(data => {
         data.promos.forEach(item => {
           const card = document.createElement("div");
           card.className = "card";
           card.innerHTML = `
+            <div class="promo-badge">PROMO</div>
             <h3>${item.nombre}</h3>
             <p>${item.descripcion}</p>
             <div class="price">$ ${Number(item.precio).toLocaleString("es-AR")}</div>
@@ -20,8 +24,9 @@ document.addEventListener("DOMContentLoaded", () => {
           container.appendChild(card);
         });
       })
-      .catch(() => {
+      .catch(err => {
         container.innerHTML = "<p>Error cargando promos</p>";
+        console.error(err);
       });
     return;
   }
@@ -41,7 +46,10 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   fetch(jsonFile)
-    .then(res => res.json())
+    .then(res => {
+      if (!res.ok) throw new Error(`No se pudo cargar ${jsonFile}`);
+      return res.json();
+    })
     .then(data => {
       data[rootKey].forEach(section => {
         const block = document.createElement("div");
@@ -70,8 +78,8 @@ document.addEventListener("DOMContentLoaded", () => {
         container.appendChild(block);
       });
     })
-    .catch(() => {
+    .catch(err => {
       container.innerHTML = "<p>Error cargando menú</p>";
+      console.error(err);
     });
 });
-
