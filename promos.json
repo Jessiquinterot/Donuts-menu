@@ -2,7 +2,7 @@
   "promos": [
     {
       "nombre": "Promo 1",
-      "descripcion": "Chocolatada + 1 alfajor XL",
+      "descripcion": "Chocolatada + 1 alfajor XL de chocolate",
       "precio": 8500
     },
     {
@@ -12,14 +12,53 @@
     },
     {
       "nombre": "Promo 3",
-      "descripcion": "Cortado + porción de torta",
+      "descripcion": "Cortado + porción de torta (consultar opciones)",
       "precio": 11500
     },
     {
       "nombre": "Promo 4",
-      "descripcion": "Cortado + 1 cookie",
+      "descripcion": "Cortado + 1 cookie (consultar opciones)",
       "precio": 6400
+    },
+    {
+      "nombre": "Promo 5",
+      "descripcion": "Cortado + 2 tostadas pan multicereal (queso y palta / queso y mermelada)",
+      "precio": 11500
+    },
+    {
+      "nombre": "Promo 6",
+      "descripcion": "Cortado + 3 tostados de miga",
+      "precio": 11500
+    },
+    {
+      "nombre": "Promo 7",
+      "descripcion": "Bebida 500ml + 1 tostado de chipa con jamón y queso",
+      "precio": 9500
+    },
+    {
+      "nombre": "Promo 8",
+      "descripcion": "Bebida 500ml + 5 bastoncitos de chipa con barbacoa y mayonesa",
+      "precio": 8500
+    },
+    {
+      "nombre": "Promo 9",
+      "descripcion": "Tarta individual + bebida 500ml",
+      "precio": 7000
+    },
+    {
+      "nombre": "Promo 10",
+      "descripcion": "Latte WOW + blondie de chocolate blanco, pistacho y frambuesa",
+      "precio": 14500
+    },
+    {
+      "nombre": "Para compartir A",
+      "descripcion": "2 infusiones + 2 medialunas XL jyq + 3 tostados de miga + 1 porción de torta",
+      "precio": 34000
+    },
+    {
+      "nombre": "Para compartir B",
+      "descripcion": "2 infusiones + Coca-Cola 500ml + tostadas palta y queso + chipa + budín + torta",
+      "precio": 39200
     }
   ]
 }
-
