@@ -53,12 +53,13 @@ body {
 .cover-bg {
   min-height: 78vh;
   border-radius: 22px;
-  background-image: url("assets/images/portada.png");
+  background-image: url("portada.jpg");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
   position: relative;
 }
+
 
 /* Barra de idiomas abajo */
 .lang-bar {
