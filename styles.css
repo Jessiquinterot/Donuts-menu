@@ -60,6 +60,14 @@ body {
 .section.active {
   display: block;
 }
+.back-btn {
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
 
 /* PORTADA */
 .cover-bg {
