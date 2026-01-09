@@ -14,6 +14,30 @@
   gap: 10px;
   align-items: center;
 }
+.menu-home {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.menu-title {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.menu-btn.big {
+  width: 260px;
+  padding: 20px;
+  font-size: 22px;
+  border-radius: 30px;
+  background: #e63b5b;
+  color: white;
+  border: none;
+  font-weight: bold;
+}
 
 .nav-btn {
   background: #ffd966;
