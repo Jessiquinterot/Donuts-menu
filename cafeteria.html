@@ -1,48 +1,68 @@
-{
-  "secciones": [
-    {
-      "titulo": "Cafetería",
-      "items": [
-        { "nombre": "Espresso", "precio": 2900 },
-        { "nombre": "Cortado / Lágrima", "precio": 3600 },
-        { "nombre": "Capuccino", "precio": 4800 },
-        { "nombre": "Latte", "precio": 4800 },
-        { "nombre": "Té", "precio": 2500 },
-        { "nombre": "Chocolatada", "precio": 4200 },
-        { "nombre": "Café para llevar", "precio": 3800 },
-        { "nombre": "Latte para llevar", "precio": 5000 }
-      ]
-    },
-    {
-      "titulo": "Latte WOW Caliente",
-      "nota": "Sabores: chocolate, dulce de leche, pistacho, chocolate blanco, vainilla, Kinder o Nutella",
-      "items": [
-        { "nombre": "Latte WOW caliente", "precio": 5800 }
-      ]
-    },
-    {
-      "titulo": "Latte WOW Frío",
-      "nota": "Sabores: chocolate, dulce de leche, pistacho, chocolate blanco, vainilla o avellanas",
-      "items": [
-        { "nombre": "Latte WOW frío", "precio": 6300 }
-      ]
-    },
-    {
-      "titulo": "Smoothies",
-      "nota": "Sabores: frutilla, maracuyá, naranja-durazno",
-      "items": [
-        { "nombre": "Con agua", "precio": 5800 },
-        { "nombre": "Con leche", "precio": 6800 }
-      ]
-    },
-    {
-      "titulo": "Frappes",
-      "nota": "Sabores: vainilla, choco blanco o chocolate",
-      "items": [
-        { "nombre": "Frappe", "precio": 6300 },
-        { "nombre": "Adicional café", "precio": 1000 },
-        { "nombre": "Adicional crema", "precio": 1300 }
-      ]
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cafetería – Donut Makers Bakery</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<header class="top-bar">
+  <button class="back-btn" onclick="location.href='menu.html'">← Menú</button>
+  <button class="nav-btn" onclick="location.href='promos.html'">🔥 Promos</button>
+  <button class="nav-btn" onclick="location.href='dulces.html'">🍩 Dulces</button>
+  <button class="nav-btn" onclick="location.href='salados.html'">🥪 Salados</button>
+  <button class="nav-btn" onclick="location.href='cafeteria.html'">☕ Cafetería</button>
+</header>
+
+<main class="container">
+  <div id="menu-content"></div>
+</main>
+
+<script>
+fetch('cafeteria.json')
+  .then(response => {
+    if (!response.ok) {
+      throw new Error('No se pudo cargar cafeteria.json');
     }
-  ]
-}
+    return response.json();
+  })
+  .then(data => {
+    const container = document.getElementById('menu-content');
+
+    data.secciones.forEach(seccion => {
+      const sectionEl = document.createElement('div');
+      sectionEl.className = 'menu-section';
+
+      let html = `<h2>${seccion.titulo}</h2>`;
+
+      if (seccion.nota) {
+        html += `<div class="note">${seccion.nota}</div>`;
+      }
+
+      html += '<ul>';
+      seccion.items.forEach(item => {
+        html += `
+          <li>
+            <span>${item.nombre}</span>
+            <span class="price">$ ${item.precio.toLocaleString('es-AR')}</span>
+          </li>
+        `;
+      });
+      html += '</ul>';
+
+      sectionEl.innerHTML = html;
+      container.appendChild(sectionEl);
+    });
+  })
+  .catch(error => {
+    document.getElementById('menu-content').innerHTML =
+      '<p>Error cargando la cafetería</p>';
+    console.error(error);
+  });
+</script>
+
+</body>
+</html>
