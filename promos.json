@@ -1,1 +1,25 @@
+{
+  "promos": [
+    {
+      "nombre": "Promo 1",
+      "descripcion": "Chocolatada + 1 alfajor XL",
+      "precio": 8500
+    },
+    {
+      "nombre": "Promo 2",
+      "descripcion": "Cortado + 2 medialunas",
+      "precio": 4500
+    },
+    {
+      "nombre": "Promo 3",
+      "descripcion": "Cortado + porción de torta",
+      "precio": 11500
+    },
+    {
+      "nombre": "Promo 4",
+      "descripcion": "Cortado + 1 cookie",
+      "precio": 6400
+    }
+  ]
+}
 
