@@ -1,8 +1,13 @@
-* { box-sizing: border-box; }
+/* RESET */
+* {
+  box-sizing: border-box;
+}
 
+/* BASE */
 body {
   margin: 0;
-  font-family: system-ui, Arial;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+               Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   background: #f3d9b1;
   color: #4b2c2c;
 }
@@ -19,7 +24,9 @@ body {
   z-index: 10;
 }
 
-.hidden { display: none; }
+.hidden {
+  display: none;
+}
 
 .nav-btn {
   background: #ffd966;
@@ -46,10 +53,15 @@ body {
 }
 
 /* SECCIONES */
-.section { display: none; }
-.section.active { display: block; }
+.section {
+  display: none;
+}
 
-/* PORTADA: imagen de fondo */
+.section.active {
+  display: block;
+}
+
+/* PORTADA */
 .cover-bg {
   min-height: 78vh;
   border-radius: 22px;
@@ -60,8 +72,7 @@ body {
   position: relative;
 }
 
-
-/* Barra de idiomas abajo */
+/* BOTONES IDIOMA */
 .lang-bar {
   position: absolute;
   left: 0;
@@ -75,23 +86,25 @@ body {
 
 .lang-btn {
   background: #e63b5b;
-  color: #fff;
+  color: #ffffff;
   border: none;
   padding: 14px 26px;
   border-radius: 28px;
   font-size: 16px;
   font-weight: 700;
   cursor: pointer;
-  box-shadow: 0 6px 0 rgba(0,0,0,0.15);
+  box-shadow: 0 6px 0 rgba(0, 0, 0, 0.15);
 }
 
-/* TITULO */
-.title-wrap { text-align: center; }
+/* TITULOS */
+.title-wrap {
+  text-align: center;
+}
 
 .title {
   font-size: 42px;
   background: #e63b5b;
-  color: #fff;
+  color: #ffffff;
   display: inline-block;
   padding: 10px 30px;
   border-radius: 25px;
@@ -105,7 +118,7 @@ body {
   gap: 20px;
 }
 
-/* CARD */
+/* CARDS PROMOS */
 .card {
   background: #fff3dc;
   border-radius: 20px;
@@ -120,7 +133,7 @@ body {
   top: -12px;
   left: 16px;
   background: #7fd1c3;
-  color: #fff;
+  color: #ffffff;
   padding: 5px 12px;
   border-radius: 12px;
   font-size: 12px;
@@ -134,8 +147,30 @@ body {
   margin-top: 10px;
 }
 
-/* ENGLISH */
+/* ENGLISH PLACEHOLDER */
 .lang-placeholder {
   text-align: center;
   padding: 80px 20px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .container {
+    margin: 10px;
+    padding: 15px;
+  }
+
+  .title {
+    font-size: 32px;
+  }
+
+  .lang-btn {
+    padding: 12px 20px;
+    font-size: 15px;
+  }
+
+  .cover-bg {
+    min-height: 65vh;
+    background-size: contain;
+  }
 }
