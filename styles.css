@@ -82,22 +82,26 @@
   z-index: 999;
 
   background: #e63b5b;
-  padding: 22px 18px;        /* MÁS ALTA */
+  padding: 26px 20px;     /* MÁS ALTA */
   display: flex;
-  gap: 16px;                /* MÁS ESPACIO ENTRE BOTONES */
+  gap: 16px;
   align-items: center;
 }
+
 
 .nav-btn,
 .back-btn {
   background: #ffd966;
   border: none;
-  padding: 14px 22px;      /* BOTONES MÁS GRANDES */
-  border-radius: 26px;
+
+  padding: 16px 26px;     /* 👆 dedo cómodo */
+  border-radius: 28px;
+
   font-weight: bold;
-  font-size: 16px;
+  font-size: 18px;        /* 🔥 */
   cursor: pointer;
 }
+
 
 
 
