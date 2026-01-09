@@ -1,17 +1,15 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Donut Makers Bakery</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
-<header class="top-bar">
-  <button class="nav-btn" onclick="showSection('lang')">Idioma</button>
-  <button class="nav-btn" onclick="showSection('home')">Inicio</button>
+<header class="top-bar hidden" id="nav">
   <button class="nav-btn" onclick="showSection('promos')">Promos</button>
   <button class="nav-btn disabled" disabled>Dulces</button>
   <button class="nav-btn disabled" disabled>Salados</button>
@@ -19,26 +17,26 @@
 
 <main class="container">
 
-  <!-- SELECTOR IDIOMA -->
-  <section id="lang" class="section active">
-    <div class="lang-select">
-      <h1>Elegí tu idioma</h1>
+  <!-- PORTADA RECREADA -->
+  <section id="cover" class="section active">
+    <div class="cover-frame">
 
-      <div class="lang-buttons">
+      <div class="hashtag">#momentoredondo</div>
+
+      <div class="logo">
+        <span class="donut">donut</span>
+        <span class="makers">makers</span>
+        <span class="bakery">bakery</span>
+        <div class="location">Recoleta</div>
+      </div>
+
+      <div class="badge">MEJOR FRAPPE WOW</div>
+
+      <div class="cover-buttons">
         <button onclick="selectLang('es')">🇪🇸 Español</button>
         <button onclick="selectLang('en')">🇬🇧 English</button>
       </div>
-    </div>
-  </section>
 
-  <!-- PORTADA ESPAÑOL -->
-  <section id="home" class="section">
-    <div class="cover">
-      <img src="assets/images/portada.png" alt="Donut Makers Bakery">
-      <div class="cover-text">
-        <h1>donut makers bakery</h1>
-        <h2>Recoleta</h2>
-      </div>
     </div>
   </section>
 
@@ -50,7 +48,7 @@
     <div id="promos-grid" class="grid"></div>
   </section>
 
-  <!-- ENGLISH PLACEHOLDER -->
+  <!-- ENGLISH -->
   <section id="english" class="section">
     <div class="lang-placeholder">
       <h1>English version</h1>
