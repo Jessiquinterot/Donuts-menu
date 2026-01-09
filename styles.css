@@ -32,12 +32,25 @@ body {
 
 /* ===== HEADER ===== */
 .top-bar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
   background: #e63b5b;
-  padding: 16px;
+  padding: 14px;
   display: flex;
+  gap: 10px;
   align-items: center;
-  gap: 12px;
 }
+
+.nav-btn {
+  background: #ffd966;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 18px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
 
 .top-bar h1 {
   color: #3a2a1f;
