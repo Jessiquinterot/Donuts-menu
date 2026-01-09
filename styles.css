@@ -211,5 +211,44 @@ body {
   font-weight: bold;
   font-size: 18px;
 }
+.menu-section {
+  margin-bottom: 32px;
+}
+
+.menu-section h2 {
+  margin-bottom: 8px;
+  border-bottom: 2px solid #e63b5b;
+  padding-bottom: 4px;
+}
+
+.menu-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.menu-section li {
+  display: flex;
+  justify-content: space-between;
+  padding: 6px 0;
+  border-bottom: 1px dotted #ccc;
+}
+
+.price {
+  font-weight: bold;
+}
+
+.note {
+  font-style: italic;
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+.back-btn {
+  background: transparent;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
 
 }
