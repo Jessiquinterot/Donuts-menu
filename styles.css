@@ -49,14 +49,20 @@ body {
 }
 
 .lang-btn {
-  background: #ffd966;
+  background: white;
+  color: #7a2e6d;              /* violeta del logo */
   border: none;
+
   padding: 16px 28px;
   border-radius: 30px;
+
   font-weight: bold;
   font-size: 18px;
   cursor: pointer;
+
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
 }
+
 
 /* ===== BARRA SUPERIOR ===== */
 .top-bar {
