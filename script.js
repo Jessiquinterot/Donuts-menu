@@ -7,13 +7,13 @@ function showSection(id) {
 
 function selectLang(lang) {
   if (lang === 'es') {
-    showSection('home');
+    document.getElementById('nav').classList.remove('hidden');
+    showSection('promos');
   } else {
     showSection('english');
   }
 }
 
-/* Cargar promos */
 fetch('promos.json')
   .then(res => res.json())
   .then(data => {
@@ -22,13 +22,11 @@ fetch('promos.json')
     data.promos.forEach(item => {
       const card = document.createElement('div');
       card.className = 'card';
-
       card.innerHTML = `
         <h3>${item.nombre}</h3>
         <p>${item.descripcion}</p>
         <div class="price">$ ${item.precio.toLocaleString('es-AR')}</div>
       `;
-
       container.appendChild(card);
     });
   });
