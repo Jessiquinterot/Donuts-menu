@@ -3,25 +3,63 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Donut Makers Bakery – Promos</title>
+  <title>Donut Makers Bakery</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-  <header class="top-bar">
-    <button class="nav-btn active" type="button">Promos</button>
-    <button class="nav-btn disabled" type="button" disabled>Dulces</button>
-    <button class="nav-btn disabled" type="button" disabled>Salados</button>
-  </header>
 
-  <main class="container">
+<header class="top-bar">
+  <button class="nav-btn" onclick="showSection('lang')">Idioma</button>
+  <button class="nav-btn" onclick="showSection('home')">Inicio</button>
+  <button class="nav-btn" onclick="showSection('promos')">Promos</button>
+  <button class="nav-btn disabled" disabled>Dulces</button>
+  <button class="nav-btn disabled" disabled>Salados</button>
+</header>
+
+<main class="container">
+
+  <!-- SELECTOR IDIOMA -->
+  <section id="lang" class="section active">
+    <div class="lang-select">
+      <h1>Elegí tu idioma</h1>
+
+      <div class="lang-buttons">
+        <button onclick="selectLang('es')">🇪🇸 Español</button>
+        <button onclick="selectLang('en')">🇬🇧 English</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- PORTADA ESPAÑOL -->
+  <section id="home" class="section">
+    <div class="cover">
+      <img src="assets/images/portada.png" alt="Donut Makers Bakery">
+      <div class="cover-text">
+        <h1>donut makers bakery</h1>
+        <h2>Recoleta</h2>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROMOS -->
+  <section id="promos" class="section">
     <div class="title-wrap">
       <h1 class="title">PROMOS</h1>
     </div>
+    <div id="promos-grid" class="grid"></div>
+  </section>
 
-    <section id="promos" class="grid"></section>
-  </main>
+  <!-- ENGLISH PLACEHOLDER -->
+  <section id="english" class="section">
+    <div class="lang-placeholder">
+      <h1>English version</h1>
+      <p>Coming soon</p>
+    </div>
+  </section>
 
-  <script src="script.js"></script>
+</main>
+
+<script src="script.js"></script>
 </body>
 </html>
