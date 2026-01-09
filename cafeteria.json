@@ -14,37 +14,73 @@
       ]
     },
     {
-  "nombre": "Latte WOW Caliente",
-  "precio": 5800,
-  "sabores": [
-    { "texto": "Chocolate", "icono": "🍫" },
-    { "texto": "Dulce de leche", "icono": "⭐" },
-    { "texto": "Pistacho", "icono": "🥜" },
-    { "texto": "Vainilla", "icono": "🍦" },
-    { "texto": "Kinder / Nutella", "icono": "🔥" }
-  ]
-}
-,
+      "titulo": "Latte WOW Caliente",
+      "items": [
+        {
+          "nombre": "Latte WOW Caliente",
+          "precio": 5800,
+          "sabores": [
+            { "texto": "Chocolate", "icono": "🍫" },
+            { "texto": "Dulce de leche", "icono": "⭐" },
+            { "texto": "Pistacho", "icono": "🥜" },
+            { "texto": "Vainilla", "icono": "🍦" },
+            { "texto": "Kinder / Nutella", "icono": "🔥" }
+          ]
+        }
+      ]
+    },
     {
       "titulo": "Latte WOW Frío",
-      "nota": "Sabores: chocolate, dulce de leche, pistacho, chocolate blanco, vainilla o avellanas",
       "items": [
-        { "nombre": "Latte WOW frío", "precio": 6300 }
+        {
+          "nombre": "Latte WOW Frío",
+          "precio": 6300,
+          "sabores": [
+            { "texto": "Chocolate", "icono": "🍫" },
+            { "texto": "Dulce de leche", "icono": "⭐" },
+            { "texto": "Pistacho", "icono": "🥜" },
+            { "texto": "Chocolate blanco", "icono": "🤍" },
+            { "texto": "Vainilla", "icono": "🍦" },
+            { "texto": "Avellanas", "icono": "🌰" }
+          ]
+        }
       ]
     },
     {
       "titulo": "Smoothies",
-      "nota": "Sabores: frutilla, maracuyá, naranja-durazno",
       "items": [
-        { "nombre": "Con agua", "precio": 5800 },
-        { "nombre": "Con leche", "precio": 6800 }
+        {
+          "nombre": "Smoothie con agua",
+          "precio": 5800,
+          "sabores": [
+            { "texto": "Frutilla", "icono": "🍓" },
+            { "texto": "Maracuyá", "icono": "🥭" },
+            { "texto": "Naranja-durazno", "icono": "🍊" }
+          ]
+        },
+        {
+          "nombre": "Smoothie con leche",
+          "precio": 6800,
+          "sabores": [
+            { "texto": "Frutilla", "icono": "🍓" },
+            { "texto": "Maracuyá", "icono": "🥭" },
+            { "texto": "Naranja-durazno", "icono": "🍊" }
+          ]
+        }
       ]
     },
     {
       "titulo": "Frappes",
-      "nota": "Sabores: vainilla, choco blanco o chocolate",
       "items": [
-        { "nombre": "Frappe", "precio": 6300 },
+        {
+          "nombre": "Frappe",
+          "precio": 6300,
+          "sabores": [
+            { "texto": "Vainilla", "icono": "🍦" },
+            { "texto": "Chocolate", "icono": "🍫" },
+            { "texto": "Chocolate blanco", "icono": "🤍" }
+          ]
+        },
         { "nombre": "Adicional café", "precio": 1000 },
         { "nombre": "Adicional crema", "precio": 1300 }
       ]
