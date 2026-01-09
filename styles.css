@@ -131,11 +131,13 @@ body {
 
 /* ===== PROMOS ===== */
 .card {
+  position: relative;   /* 👈 ESTA ES LA CLAVE */
   background: #fff3dc;
   border-radius: 24px;
   padding: 24px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.15);
 }
+
 
 .card h3 {
   font-size: 20px;
