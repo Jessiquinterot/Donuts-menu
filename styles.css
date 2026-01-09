@@ -18,13 +18,14 @@ body {
 /* ===== PORTADA ===== */
 .cover {
   min-height: 100vh;
-  background: #e63b5b;
-  padding: 16px;
+  background: #f6dcb5;   /* crema */
+  padding: 20px;
 
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 
 .cover-inner {
   width: 100%;
