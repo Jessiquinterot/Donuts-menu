@@ -146,6 +146,21 @@ body {
   font-size: 16px;
   margin-bottom: 14px;
 }
+.promo-badge {
+  position: absolute;
+  top: -12px;
+  left: 16px;
+
+  background: #4cc7b0;     /* azul verdoso */
+  color: white;
+
+  font-size: 12px;
+  font-weight: bold;
+  padding: 6px 12px;
+
+  border-radius: 14px;
+  letter-spacing: 0.5px;
+}
 
 .card .price {
   font-size: 22px;
