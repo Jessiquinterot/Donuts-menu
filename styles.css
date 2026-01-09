@@ -21,6 +21,10 @@ body {
   z-index: 10;
 }
 
+.top-bar.hidden {
+  display: none;
+}
+
 .nav-btn {
   background: #ffd966;
   border: none;
@@ -54,33 +58,6 @@ body {
   display: block;
 }
 
-/* IDIOMA */
-.lang-select {
-  text-align: center;
-  padding: 60px 20px;
-}
-
-.lang-select h1 {
-  font-size: 36px;
-  margin-bottom: 30px;
-}
-
-.lang-buttons {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-}
-
-.lang-buttons button {
-  background: #e63b5b;
-  color: #fff;
-  border: none;
-  padding: 16px 30px;
-  font-size: 20px;
-  border-radius: 30px;
-  cursor: pointer;
-}
-
 /* PORTADA */
 .cover {
   text-align: center;
@@ -92,15 +69,22 @@ body {
   border-radius: 25px;
 }
 
-.cover-text h1 {
-  font-size: 36px;
-  margin: 20px 0 0;
-  color: #e63b5b;
+/* BOTONES IDIOMA */
+.cover-buttons {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
 }
 
-.cover-text h2 {
-  font-size: 24px;
-  margin: 5px 0 0;
+.cover-buttons button {
+  background: #e63b5b;
+  color: #fff;
+  border: none;
+  padding: 14px 32px;
+  font-size: 18px;
+  border-radius: 30px;
+  cursor: pointer;
 }
 
 /* TITULOS */
