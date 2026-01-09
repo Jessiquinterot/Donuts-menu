@@ -17,14 +17,14 @@ body {
 
 /* ===== PORTADA ===== */
 .cover {
-  min-height: 100vh;
-  background: #fde2ea;   /* crema */
-  padding: 20px;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background: white;
 }
+
+.cover-inner {
+  border: 10px solid #e63b5b;
+  border-radius: 22px;
+}
+
 
 
 .cover-inner {
