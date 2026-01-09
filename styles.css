@@ -6,74 +6,56 @@
 }
 
 /* ===== BASE ===== */
-  /*body {
-  /* font-family: Arial, sans-serif;
- /*  background: #f6dcb5;
- /*  color: #3a2a1f;
-  /* padding-top: 70px; /* espacio para la barra fija */
-  body {
+body {
   font-family: Arial, sans-serif;
   background: #f6dcb5;
   color: #3a2a1f;
-
-  font-size: 18px;       /* 🔥 antes ~14–16 */
+  font-size: 18px;
   line-height: 1.4;
-
-  padding-top: 90px;     /* barra más grande */
+  padding-top: 90px; /* barra fija */
 }
 
-
-
-/* ===== PORTADA (INDEX) ===== */
+/* ===== PORTADA ===== */
 .cover {
   min-height: 100vh;
-  background-color: #e63b5b;     /* MARCO ROSA */
-  padding:  20px;
+  background: #e63b5b;
+  padding: 16px;
 
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .cover-inner {
   width: 100%;
-  height: 100%;              /* CLAVE */
-  max-width: 480px;          /* tamaño tipo flyer */
-  max-height: 95vh;          /* casi toda la pantalla */
+  max-width: 420px;
+  height: 95vh;
 
   background-image: url('portada.jpg');
- /* / background-size: cover; */   /* AHORA SÍ */
-  
   background-size: contain;
-  background-color: #f6dcb5;
   background-position: center;
   background-repeat: no-repeat;
-
-  border-radius: 18px;
 
   display: flex;
   justify-content: center;
   align-items: flex-end;
 }
 
-
-
 .lang-bar {
-  margin-bottom: 40px;
+  margin-bottom: 28px;
   display: flex;
-  gap: 16px;
+  gap: 18px;
 }
 
 .lang-btn {
   background: #ffd966;
   border: none;
-
-  padding: 18px 28px;
+  padding: 16px 28px;
   border-radius: 30px;
-
   font-weight: bold;
   font-size: 18px;
+  cursor: pointer;
 }
-
 
 /* ===== BARRA SUPERIOR ===== */
 .top-bar {
@@ -84,30 +66,24 @@
   z-index: 999;
 
   background: #e63b5b;
-  padding: 26px 20px;     /* MÁS ALTA */
+  padding: 26px 20px;
   display: flex;
   gap: 16px;
   align-items: center;
 }
 
-
 .nav-btn,
 .back-btn {
   background: #ffd966;
   border: none;
-
-  padding: 16px 26px;     /* 👆 dedo cómodo */
+  padding: 16px 26px;
   border-radius: 28px;
-
   font-weight: bold;
-  font-size: 18px;        /* 🔥 */
+  font-size: 18px;
   cursor: pointer;
 }
 
-
-
-
-/* ===== CONTENEDOR GENERAL ===== */
+/* ===== CONTENEDOR ===== */
 .container {
   padding: 20px;
 }
@@ -120,7 +96,7 @@
   gap: 18px;
 }
 
-/* ===== MENU HOME (menu.html) ===== */
+/* ===== MENU HOME ===== */
 .menu-home {
   min-height: 100vh;
   display: flex;
@@ -143,9 +119,9 @@
 
 .menu-btn.big {
   width: 260px;
-  padding: 20px;
+  padding: 22px;
   font-size: 22px;
-  border-radius: 30px;
+  border-radius: 32px;
   background: #e63b5b;
   color: white;
   border: none;
@@ -155,16 +131,11 @@
 
 /* ===== PROMOS ===== */
 .card {
-  position: relative;
   background: #fff3dc;
   border-radius: 24px;
-
-  padding: 24px;          /* MÁS AIRE */
+  padding: 24px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-
-  font-size: 18px;
 }
-
 
 .card h3 {
   font-size: 20px;
@@ -177,23 +148,10 @@
 }
 
 .card .price {
-  font-size: 22px;        /* 💰 */
+  font-size: 22px;
   font-weight: bold;
   color: #e63b5b;
   text-align: right;
-}
-
-
-.promo-badge {
-  position: absolute;
-  top: -10px;
-  left: -10px;
-  background: #4cc7b0;
-  color: white;
-  font-size: 11px;
-  font-weight: bold;
-  padding: 6px 10px;
-  border-radius: 12px;
 }
 
 /* ===== DULCES / SALADOS ===== */
@@ -209,28 +167,15 @@
   border-bottom: 3px solid #e63b5b;
 }
 
-.menu-section li {
-  display: flex;
-  justify-content: space-between;
-
-  padding: 10px 0;
-  font-size: 18px;        /* 🔥 */
-}
-
-.note {
-  font-style: italic;
-  font-size: 14px;
-  margin-bottom: 8px;
-}
-
 .menu-section ul {
   list-style: none;
 }
 
-
-
-.menu-section li:last-child {
-  border-bottom: none;
+.menu-section li {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  font-size: 18px;
 }
 
 .menu-section .price {
@@ -246,9 +191,5 @@
   .menu-btn.big {
     width: 220px;
     font-size: 20px;
-  }
-
-  .card h3 {
-    font-size: 16px;
   }
 }
