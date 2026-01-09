@@ -306,5 +306,11 @@ body {
 .badge.cold {
   background: #4fc3f7;
 }
+/* ===== SOLO INDEX: BOTONES IDIOMA SIN AMARILLO ===== */
+.cover .lang-btn {
+  background: #ffffff;
+  color: #7a2e6d;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
 
 }
