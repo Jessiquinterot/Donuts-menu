@@ -13,7 +13,7 @@
   <span class="nav-title">Menú</span>
 </header>
 
-<main class="container">
+<main class="container"> 
 
   <div class="menu-choice">
     <button class="menu-btn" onclick="location.href='promos.html'">PROMOS</button>
