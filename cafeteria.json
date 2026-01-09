@@ -14,12 +14,17 @@
       ]
     },
     {
-      "titulo": "Latte WOW Caliente",
-      "nota": "Sabores: chocolate, dulce de leche, pistacho, chocolate blanco, vainilla, Kinder o Nutella",
-      "items": [
-        { "nombre": "Latte WOW caliente", "precio": 5800 }
-      ]
-    },
+  "nombre": "Latte WOW Caliente",
+  "precio": 5800,
+  "sabores": [
+    { "texto": "Chocolate", "icono": "🍫" },
+    { "texto": "Dulce de leche", "icono": "⭐" },
+    { "texto": "Pistacho", "icono": "🥜" },
+    { "texto": "Vainilla", "icono": "🍦" },
+    { "texto": "Kinder / Nutella", "icono": "🔥" }
+  ]
+}
+,
     {
       "titulo": "Latte WOW Frío",
       "nota": "Sabores: chocolate, dulce de leche, pistacho, chocolate blanco, vainilla o avellanas",
