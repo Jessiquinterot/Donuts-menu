@@ -18,7 +18,7 @@ body {
 /* ===== PORTADA ===== */
 .cover {
   min-height: 100vh;
-  background: #f6dcb5;   /* crema */
+  background: #fde2ea;   /* crema */
   padding: 20px;
 
   display: flex;
