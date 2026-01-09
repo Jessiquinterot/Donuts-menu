@@ -5,15 +5,19 @@
   padding: 0;
 }
 .top-bar {
-  position: sticky;
+  position: fixed;
   top: 0;
-  z-index: 100;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+
   background: #e63b5b;
   padding: 14px;
   display: flex;
   gap: 10px;
   align-items: center;
 }
+
 .menu-home {
   min-height: 100vh;
   display: flex;
@@ -56,15 +60,19 @@ body {
 
 /* ===== HEADER ===== */
 .top-bar {
-  position: sticky;
+  position: fixed;
   top: 0;
-  z-index: 100;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+
   background: #e63b5b;
   padding: 14px;
   display: flex;
   gap: 10px;
   align-items: center;
 }
+
 
 .nav-btn {
   background: #ffd966;
