@@ -2,21 +2,40 @@ document.addEventListener("DOMContentLoaded", () => {
   const container = document.getElementById("menu-content");
   if (!container) return;
 
-  // Detectar qué página estamos viendo
-  const page = window.location.pathname;
+  const path = window.location.pathname.toLowerCase();
 
+  /* ===== PROMOS ===== */
+  if (path.includes("promos.html")) {
+    fetch("promos.json")
+      .then(res => res.json())
+      .then(data => {
+        data.promos.forEach(item => {
+          const card = document.createElement("div");
+          card.className = "card";
+          card.innerHTML = `
+            <h3>${item.nombre}</h3>
+            <p>${item.descripcion}</p>
+            <div class="price">$ ${Number(item.precio).toLocaleString("es-AR")}</div>
+          `;
+          container.appendChild(card);
+        });
+      })
+      .catch(() => {
+        container.innerHTML = "<p>Error cargando promos</p>";
+      });
+    return;
+  }
+
+  /* ===== DULCES / SALADOS ===== */
   let jsonFile = "";
   let rootKey = "";
 
-  if (page.includes("dulces.html")) {
+  if (path.includes("dulces.html")) {
     jsonFile = "dulces.json";
     rootKey = "dulces";
-  } else if (page.includes("salados.html")) {
+  } else if (path.includes("salados.html")) {
     jsonFile = "salados.json";
     rootKey = "salados";
-  } else if (page.includes("promos.html")) {
-    jsonFile = "promos.json";
-    rootKey = "promos";
   } else {
     return;
   }
@@ -24,13 +43,12 @@ document.addEventListener("DOMContentLoaded", () => {
   fetch(jsonFile)
     .then(res => res.json())
     .then(data => {
-      const sections = data[rootKey];
-
-      sections.forEach(section => {
+      data[rootKey].forEach(section => {
         const block = document.createElement("div");
         block.className = "menu-section";
 
         let html = `<h2>${section.categoria}</h2>`;
+
         if (section.nota) {
           html += `<p class="note">${section.nota}</p>`;
         }
@@ -41,7 +59,7 @@ document.addEventListener("DOMContentLoaded", () => {
             <li>
               <span>${item.nombre}</span>
               <span class="price">
-                ${item.precio !== null ? "$" + item.precio.toLocaleString("es-AR") : ""}
+                ${item.precio !== null ? "$ " + Number(item.precio).toLocaleString("es-AR") : ""}
               </span>
             </li>
           `;
@@ -52,9 +70,8 @@ document.addEventListener("DOMContentLoaded", () => {
         container.appendChild(block);
       });
     })
-    .catch(err => {
-      container.innerHTML = "<p>Error cargando el menú</p>";
-      console.error(err);
+    .catch(() => {
+      container.innerHTML = "<p>Error cargando menú</p>";
     });
 });
 
