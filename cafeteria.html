@@ -43,14 +43,26 @@ fetch('cafeteria.json')
       }
 
       html += '<ul>';
-      seccion.items.forEach(item => {
-        html += `
-          <li>
-            <span>${item.nombre}</span>
-            <span class="price">$ ${item.precio.toLocaleString('es-AR')}</span>
-          </li>
-        `;
-      });
+     seccion.items.forEach(item => {
+  html += `
+    <li>
+      <div>
+        <strong>${item.nombre}</strong>
+        ${
+          item.sabores
+            ? `<ul class="flavors">
+                ${item.sabores
+                  .map(s => `<li>${s.icono} ${s.texto}</li>`)
+                  .join('')}
+              </ul>`
+            : ''
+        }
+      </div>
+      <span class="price">$ ${item.precio.toLocaleString('es-AR')}</span>
+    </li>
+  `;
+});
+
       html += '</ul>';
 
       sectionEl.innerHTML = html;
