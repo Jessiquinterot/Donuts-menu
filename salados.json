@@ -1,0 +1,112 @@
+{
+  "salados": [
+    {
+      "categoria": "Scone de queso",
+      "items": [
+        { "nombre": "Simple", "precio": 6600 },
+        { "nombre": "Con jamón y queso", "precio": 7200 },
+        { "nombre": "Con crudo y queso", "precio": 8400 }
+      ]
+    },
+    {
+      "categoria": "Bastoncitos de chipá",
+      "items": [
+        {
+          "nombre": "8 unidades con dip de barbacoa y mayonesa",
+          "precio": 7200
+        }
+      ]
+    },
+    {
+      "categoria": "Donut rellena",
+      "nota": "Nuestro sello, el postrecito",
+      "items": [
+        { "nombre": "Jamón y queso", "precio": 4500 },
+        { "nombre": "Crudo y queso", "precio": 5500 },
+        { "nombre": "Lomito y cheddar", "precio": 5500 }
+      ]
+    },
+    {
+      "categoria": "Tostados de miga",
+      "items": [
+        { "nombre": "3 unidades", "precio": 8000 }
+      ]
+    },
+    {
+      "categoria": "Pizza individual",
+      "items": [
+        { "nombre": "Muzarella", "precio": null }
+      ]
+    },
+    {
+      "categoria": "Tarta",
+      "items": [
+        { "nombre": "Jamón y muzarella", "precio": null }
+      ]
+    },
+    {
+      "categoria": "Tostado de chipá",
+      "items": [
+        { "nombre": "Jamón y queso", "precio": 6200 },
+        { "nombre": "Crudo y queso", "precio": 7500 },
+        { "nombre": "Lomito y cheddar", "precio": 8000 }
+      ]
+    },
+    {
+      "categoria": "Medialuna XL",
+      "items": [
+        { "nombre": "Jamón y queso", "precio": 4500 },
+        { "nombre": "Crudo y queso", "precio": 5500 },
+        { "nombre": "Lomito y cheddar", "precio": 5500 }
+      ]
+    },
+    {
+      "categoria": "Tostadas pan artesanal multisemillas",
+      "items": [
+        { "nombre": "Mermelada y queso", "precio": 10500 },
+        { "nombre": "Palta y queso", "precio": 14500 }
+      ]
+    },
+    {
+      "categoria": "Paninis",
+      "items": [
+        { "nombre": "Jamón y queso", "precio": 4500 },
+        { "nombre": "Crudo y queso", "precio": 5500 },
+        { "nombre": "Lomito y cheddar", "precio": 5500 }
+      ]
+    },
+    {
+      "categoria": "Chipá",
+      "items": [
+        { "nombre": "x6", "precio": 4500 },
+        { "nombre": "x12", "precio": 8000 }
+      ]
+    },
+    {
+      "categoria": "Sándwiches",
+      "items": [
+        { "nombre": "Lomito", "precio": 7500 },
+        { "nombre": "Lomito y cheddar", "precio": 8000 }
+      ]
+    },
+    {
+      "categoria": "Empanadas",
+      "items": [
+        { "nombre": "Jamón y queso", "precio": 3200 },
+        { "nombre": "Carne", "precio": 3200 }
+      ]
+    },
+    {
+      "categoria": "Papas fritas",
+      "items": [
+        { "nombre": "Papas fritas", "precio": 4500 }
+      ]
+    },
+    {
+      "categoria": "Combos",
+      "items": [
+        { "nombre": "Papas fritas + bebida", "precio": 6500 }
+      ]
+    }
+  ]
+}
