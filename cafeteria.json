@@ -61,11 +61,6 @@
         {
           "nombre": "Smoothie con leche",
           "precio": 6800,
-          "sabores": [
-            { "texto": "Frutilla", "icono": "🍓" },
-            { "texto": "Maracuyá", "icono": "🥭" },
-            { "texto": "Naranja-durazno", "icono": "🍊" }
-          ]
         }
       ]
     },
