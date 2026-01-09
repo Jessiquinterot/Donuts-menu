@@ -66,12 +66,14 @@
 .lang-btn {
   background: #ffd966;
   border: none;
-  padding: 12px 20px;
-  border-radius: 22px;
+
+  padding: 18px 28px;
+  border-radius: 30px;
+
   font-weight: bold;
-  font-size: 16px;
-  cursor: pointer;
+  font-size: 18px;
 }
+
 
 /* ===== BARRA SUPERIOR ===== */
 .top-bar {
@@ -155,27 +157,32 @@
 .card {
   position: relative;
   background: #fff3dc;
-  border-radius: 20px;
-  padding: 18px 20px;
-  box-shadow: 0 3px 8px rgba(0,0,0,0.12);
+  border-radius: 24px;
+
+  padding: 24px;          /* MÁS AIRE */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+
+  font-size: 18px;
 }
 
+
 .card h3 {
-  font-size: 18px;
-  margin-bottom: 6px;
+  font-size: 20px;
+  margin-bottom: 8px;
 }
 
 .card p {
-  font-size: 14px;
-  margin-bottom: 12px;
+  font-size: 16px;
+  margin-bottom: 14px;
 }
 
 .card .price {
-  font-size: 18px;
+  font-size: 22px;        /* 💰 */
   font-weight: bold;
   color: #e63b5b;
   text-align: right;
 }
+
 
 .promo-badge {
   position: absolute;
@@ -192,15 +199,22 @@
 /* ===== DULCES / SALADOS ===== */
 .menu-section {
   background: #fff3dc;
-  border-radius: 20px;
-  padding: 16px 18px;
+  border-radius: 24px;
+  padding: 22px;
 }
 
 .menu-section h2 {
-  font-size: 20px;
-  margin-bottom: 8px;
-  border-bottom: 2px solid #e63b5b;
-  padding-bottom: 4px;
+  font-size: 24px;
+  margin-bottom: 10px;
+  border-bottom: 3px solid #e63b5b;
+}
+
+.menu-section li {
+  display: flex;
+  justify-content: space-between;
+
+  padding: 10px 0;
+  font-size: 18px;        /* 🔥 */
 }
 
 .note {
@@ -213,12 +227,7 @@
   list-style: none;
 }
 
-.menu-section li {
-  display: flex;
-  justify-content: space-between;
-  padding: 6px 0;
-  border-bottom: 1px dotted #c9b08a;
-}
+
 
 .menu-section li:last-child {
   border-bottom: none;
