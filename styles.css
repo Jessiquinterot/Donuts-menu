@@ -6,12 +6,23 @@
 }
 
 /* ===== BASE ===== */
-body {
+  /*body {
+  /* font-family: Arial, sans-serif;
+ /*  background: #f6dcb5;
+ /*  color: #3a2a1f;
+  /* padding-top: 70px; /* espacio para la barra fija */
+  body {
   font-family: Arial, sans-serif;
   background: #f6dcb5;
   color: #3a2a1f;
-  padding-top: 70px; /* espacio para la barra fija */
+
+  font-size: 18px;       /* 🔥 antes ~14–16 */
+  line-height: 1.4;
+
+  padding-top: 90px;     /* barra más grande */
 }
+
+
 
 /* ===== PORTADA (INDEX) ===== */
 .cover {
