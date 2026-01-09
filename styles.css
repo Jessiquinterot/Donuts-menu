@@ -17,7 +17,7 @@ body {
 .cover {
   min-height: 100vh;
   background-color: #e63b5b;     /* MARCO ROSA */
-  padding: 18px;
+  padding:  20px;
 
   display: flex;
   justify-content: center;
@@ -25,18 +25,25 @@ body {
 }
 .cover-inner {
   width: 100%;
-  max-width: 420px;
-  height: 100%;
+  height: 100%;              /* CLAVE */
+  max-width: 480px;          /* tamaño tipo flyer */
+  max-height: 95vh;          /* casi toda la pantalla */
 
   background-image: url('portada.jpg');
-  background-size: contain;      /* NO RECORTA */
+ /* / background-size: cover; */   /* AHORA SÍ */
+  
+  background-size: contain;
+  background-color: #f6dcb5;
   background-position: center;
   background-repeat: no-repeat;
+
+  border-radius: 18px;
 
   display: flex;
   justify-content: center;
   align-items: flex-end;
 }
+
 
 
 .lang-bar {
