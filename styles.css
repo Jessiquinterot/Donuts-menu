@@ -148,6 +148,21 @@ body {
   padding: 6px 0;
   border-bottom: 1px dotted #c9b08a;
 }
+.cover {
+  min-height: 100vh;
+  background-image: url('portada.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.lang-bar {
+  margin-bottom: 40px;
+  display: flex;
+  gap: 16px;
+}
 
 .menu-section li:last-child {
   border-botto
