@@ -17,7 +17,7 @@
       "titulo": "Latte WOW Caliente",
       "items": [
         {
-          "nombre": "Latte WOW Caliente",
+          "nombre": "Latte WOW caliente",
           "precio": 5800,
           "sabores": [
             { "texto": "Chocolate", "icono": "🍫" },
@@ -33,15 +33,14 @@
       "titulo": "Latte WOW Frío",
       "items": [
         {
-          "nombre": "Latte WOW Frío",
+          "nombre": "Latte WOW frío",
           "precio": 6300,
           "sabores": [
             { "texto": "Chocolate", "icono": "🍫" },
             { "texto": "Dulce de leche", "icono": "⭐" },
             { "texto": "Pistacho", "icono": "🥜" },
             { "texto": "Chocolate blanco", "icono": "🤍" },
-            { "texto": "Vainilla", "icono": "🍦" },
-            { "texto": "Avellanas", "icono": "🌰" }
+            { "texto": "Vainilla / Avellanas", "icono": "🍦" }
           ]
         }
       ]
@@ -55,12 +54,17 @@
           "sabores": [
             { "texto": "Frutilla", "icono": "🍓" },
             { "texto": "Maracuyá", "icono": "🥭" },
-            { "texto": "Naranja-durazno", "icono": "🍊" }
+            { "texto": "Naranja – durazno", "icono": "🍊" }
           ]
         },
         {
           "nombre": "Smoothie con leche",
           "precio": 6800,
+          "sabores": [
+            { "texto": "Frutilla", "icono": "🍓" },
+            { "texto": "Maracuyá", "icono": "🥭" },
+            { "texto": "Naranja – durazno", "icono": "🍊" }
+          ]
         }
       ]
     },
@@ -72,8 +76,8 @@
           "precio": 6300,
           "sabores": [
             { "texto": "Vainilla", "icono": "🍦" },
-            { "texto": "Chocolate", "icono": "🍫" },
-            { "texto": "Chocolate blanco", "icono": "🤍" }
+            { "texto": "Chocolate blanco", "icono": "🤍" },
+            { "texto": "Chocolate", "icono": "🍫" }
           ]
         },
         { "nombre": "Adicional café", "precio": 1000 },
