@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Donut Makers Bakery</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
+<!-- NAV (oculto al inicio) -->
 <header class="top-bar hidden" id="nav">
   <button class="nav-btn" onclick="showSection('promos')">Promos</button>
   <button class="nav-btn disabled" disabled>Dulces</button>
@@ -17,26 +18,13 @@
 
 <main class="container">
 
-  <!-- PORTADA RECREADA -->
+  <!-- PORTADA con imagen de fondo + botones idioma -->
   <section id="cover" class="section active">
-    <div class="cover-frame">
-
-      <div class="hashtag">#momentoredondo</div>
-
-      <div class="logo">
-        <span class="donut">donut</span>
-        <span class="makers">makers</span>
-        <span class="bakery">bakery</span>
-        <div class="location">Recoleta</div>
+    <div class="cover-bg">
+      <div class="lang-bar">
+        <button class="lang-btn" onclick="selectLang('es')">🇪🇸 Español</button>
+        <button class="lang-btn" onclick="selectLang('en')">🇬🇧 English</button>
       </div>
-
-      <div class="badge">MEJOR FRAPPE WOW</div>
-
-      <div class="cover-buttons">
-        <button onclick="selectLang('es')">🇪🇸 Español</button>
-        <button onclick="selectLang('en')">🇬🇧 English</button>
-      </div>
-
     </div>
   </section>
 
@@ -48,7 +36,7 @@
     <div id="promos-grid" class="grid"></div>
   </section>
 
-  <!-- ENGLISH -->
+  <!-- ENGLISH PLACEHOLDER -->
   <section id="english" class="section">
     <div class="lang-placeholder">
       <h1>English version</h1>
