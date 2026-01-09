@@ -16,8 +16,20 @@ body {
 /* ===== PORTADA (INDEX) ===== */
 .cover {
   min-height: 100vh;
+  background-color: #e63b5b;     /* MARCO ROSA */
+  padding: 18px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cover-inner {
+  width: 100%;
+  max-width: 420px;
+  height: 100%;
+
   background-image: url('portada.jpg');
-  background-size: cover;
+  background-size: contain;      /* NO RECORTA */
   background-position: center;
   background-repeat: no-repeat;
 
@@ -25,6 +37,7 @@ body {
   justify-content: center;
   align-items: flex-end;
 }
+
 
 .lang-bar {
   margin-bottom: 40px;
@@ -51,9 +64,9 @@ body {
   z-index: 999;
 
   background: #e63b5b;
-  padding: 14px;
+  padding: 22px 18px;        /* MÁS ALTA */
   display: flex;
-  gap: 10px;
+  gap: 16px;                /* MÁS ESPACIO ENTRE BOTONES */
   align-items: center;
 }
 
@@ -61,11 +74,14 @@ body {
 .back-btn {
   background: #ffd966;
   border: none;
-  padding: 8px 14px;
-  border-radius: 18px;
+  padding: 14px 22px;      /* BOTONES MÁS GRANDES */
+  border-radius: 26px;
   font-weight: bold;
+  font-size: 16px;
   cursor: pointer;
 }
+
+
 
 /* ===== CONTENEDOR GENERAL ===== */
 .container {
