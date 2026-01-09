@@ -4,6 +4,45 @@
   margin: 0;
   padding: 0;
 }
+
+/* ===== BASE ===== */
+body {
+  font-family: Arial, sans-serif;
+  background: #f6dcb5;
+  color: #3a2a1f;
+  padding-top: 70px; /* espacio para la barra fija */
+}
+
+/* ===== PORTADA (INDEX) ===== */
+.cover {
+  min-height: 100vh;
+  background-image: url('portada.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.lang-bar {
+  margin-bottom: 40px;
+  display: flex;
+  gap: 16px;
+}
+
+.lang-btn {
+  background: #ffd966;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 22px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* ===== BARRA SUPERIOR ===== */
 .top-bar {
   position: fixed;
   top: 0;
@@ -18,6 +57,30 @@
   align-items: center;
 }
 
+.nav-btn,
+.back-btn {
+  background: #ffd966;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 18px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* ===== CONTENEDOR GENERAL ===== */
+.container {
+  padding: 20px;
+}
+
+#menu-content {
+  max-width: 720px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* ===== MENU HOME (menu.html) ===== */
 .menu-home {
   min-height: 100vh;
   display: flex;
@@ -32,6 +95,12 @@
   font-weight: bold;
 }
 
+.menu-choice {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
 .menu-btn.big {
   width: 260px;
   padding: 20px;
@@ -41,75 +110,7 @@
   color: white;
   border: none;
   font-weight: bold;
-}
-
-.nav-btn {
-  background: #ffd966;
-  border: none;
-  padding: 8px 14px;
-  border-radius: 18px;
-  font-weight: bold;
   cursor: pointer;
-}
-
-body {
-  font-family: "Arial", sans-serif;
-  background: #f6dcb5;
-  color: #3a2a1f;
-}
-
-/* ===== HEADER ===== */
-.top-bar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 999;
-
-  background: #e63b5b;
-  padding: 14px;
-  display: flex;
-  gap: 10px;
-  align-items: center;
-}
-
-
-.nav-btn {
-  background: #ffd966;
-  border: none;
-  padding: 8px 14px;
-  border-radius: 18px;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-
-.top-bar h1 {
-  color: #3a2a1f;
-  font-size: 22px;
-}
-
-/* ===== BOTÓN VOLVER ===== */
-.back-btn {
-  background: #ffd966;
-  border: none;
-  padding: 8px 14px;
-  border-radius: 18px;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-/* ===== CONTENEDOR ===== */
-.container {
-  padding: 20px;
-}
-
-#menu-content {
-  max-width: 720px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  gap: 18px;
 }
 
 /* ===== PROMOS ===== */
@@ -180,21 +181,27 @@ body {
   padding: 6px 0;
   border-bottom: 1px dotted #c9b08a;
 }
-.cover {
-  min-height: 100vh;
-  background-image: url('portada.jpg');
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-}
-
-.lang-bar {
-  margin-bottom: 40px;
-  display: flex;
-  gap: 16px;
-}
 
 .menu-section li:last-child {
-  border-botto
+  border-bottom: none;
+}
+
+.menu-section .price {
+  font-weight: bold;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 480px) {
+  .menu-title {
+    font-size: 28px;
+  }
+
+  .menu-btn.big {
+    width: 220px;
+    font-size: 20px;
+  }
+
+  .card h3 {
+    font-size: 16px;
+  }
+}
