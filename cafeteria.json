@@ -4,11 +4,11 @@
       "titulo": "Cafetería",
       "items": [
         { "nombre": "Espresso", "precio": 2900 },
-        { "nombre": "Cortado / Lágrima", "precio": 3600 },
+        { "nombre": "Cortado / Lágrima", "precio": 3600, "top": true },
         { "nombre": "Capuccino", "precio": 4800 },
         { "nombre": "Latte", "precio": 4800 },
         { "nombre": "Té", "precio": 2500 },
-        { "nombre": "Chocolatada", "precio": 4200 },
+        { "nombre": "Chocolatada", "precio": 4200, "top": true },
         { "nombre": "Café para llevar", "precio": 3800 },
         { "nombre": "Latte para llevar", "precio": 5000 }
       ]
@@ -19,6 +19,9 @@
         {
           "nombre": "Latte WOW caliente",
           "precio": 5800,
+          "destacado": "wow",
+          "temperatura": "caliente",
+          "top": true,
           "sabores": [
             { "texto": "Chocolate", "icono": "🍫" },
             { "texto": "Dulce de leche", "icono": "⭐" },
@@ -35,6 +38,8 @@
         {
           "nombre": "Latte WOW frío",
           "precio": 6300,
+          "destacado": "wow",
+          "temperatura": "frio",
           "sabores": [
             { "texto": "Chocolate", "icono": "🍫" },
             { "texto": "Dulce de leche", "icono": "⭐" },
@@ -51,6 +56,7 @@
         {
           "nombre": "Smoothie con agua",
           "precio": 5800,
+          "temperatura": "frio",
           "sabores": [
             { "texto": "Frutilla", "icono": "🍓" },
             { "texto": "Maracuyá", "icono": "🥭" },
@@ -59,7 +65,13 @@
         },
         {
           "nombre": "Smoothie con leche",
-          "precio": 6800
+          "precio": 6800,
+          "temperatura": "frio",
+          "sabores": [
+            { "texto": "Frutilla", "icono": "🍓" },
+            { "texto": "Maracuyá", "icono": "🥭" },
+            { "texto": "Naranja – durazno", "icono": "🍊" }
+          ]
         }
       ]
     },
@@ -69,15 +81,23 @@
         {
           "nombre": "Frappe",
           "precio": 6300,
+          "temperatura": "frio",
           "sabores": [
             { "texto": "Vainilla", "icono": "🍦" },
             { "texto": "Chocolate blanco", "icono": "🤍" },
             { "texto": "Chocolate", "icono": "🍫" }
           ]
         },
-        { "nombre": "Adicional café", "precio": 1000 },
-        { "nombre": "Adicional crema", "precio": 1300 }
+        {
+          "nombre": "Adicional café",
+          "precio": 1000
+        },
+        {
+          "nombre": "Adicional crema",
+          "precio": 1300
+        }
       ]
     }
   ]
 }
+
