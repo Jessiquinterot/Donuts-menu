@@ -363,4 +363,29 @@ body {
   color: white;
   box-shadow: 0 4px 10px rgba(0,0,0,0.15);
 }
+/* ===== LOGO ANIMADO CON GLOW ===== */
+.pulse-glow {
+  animation: pulseGlow 2.8s ease-in-out infinite;
+  border-radius: 16px;
+}
+
+/* Animación combinada */
+@keyframes pulseGlow {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 rgba(230, 59, 91, 0);
+  }
+
+  50% {
+    transform: scale(1.06);
+    box-shadow:
+      0 0 18px rgba(230, 59, 91, 0.35),
+      0 0 35px rgba(230, 59, 91, 0.25);
+  }
+
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 rgba(230, 59, 91, 0);
+  }
+}
 
