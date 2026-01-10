@@ -1,15 +1,15 @@
 {
-  "salados": [
+  "salados/Savory": [
     {
-      "categoria": "Scone de queso",
+      "categoria": "Scone de queso/ Cheese Bread",
       "items": [
         { "nombre": "Simple", "precio": 6600 },
-        { "nombre": "Con jamón y queso", "precio": 7200 },
-        { "nombre": "Con crudo y queso", "precio": 8400 }
+        { "nombre": "Con jamón y queso/ Ham & cheddar", "precio": 7200 },
+        { "nombre": "Con crudo y queso /  Prosciutto & cheddar ", "precio": 8400 }
       ]
     },
     {
-      "categoria": "Bastoncitos de chipá",
+      "categoria": "Bastoncitos de chipá (Cheese Sticks)",
       "items": [
         {
           "nombre": "8 unidades con dip de barbacoa y mayonesa",
@@ -18,46 +18,41 @@
       ]
     },
     {
-      "categoria": "Donut rellena",
+      "categoria": "Donut rellena / Filled Donut ",
       "nota": "Nuestro sello, el postrecito",
       "items": [
-        { "nombre": "Jamón y queso", "precio": 4500 },
-        { "nombre": "Crudo y queso", "precio": 5500 },
-        { "nombre": "Lomito y cheddar", "precio": 5500 }
+        { "nombre": "Jamón y queso /  Ham & cheddar", "precio": 4500 },
+        { "nombre": "Crudo y queso/ Prosciutto & cheddar", "precio": 5500 },
+        { "nombre": "Lomito y cheddar / Smoked Pork Loin & cheddar", "precio": 5500 }
       ]
     },
     {
-      "categoria": "Tostados de miga",
+      "categoria": "Tostados de miga (Toasted Sandwich)",
       "items": [
         { "nombre": "3 unidades", "precio": 8000 }
       ]
     },
+   
     {
-      "categoria": "Pizza individual",
+      "categoria": "Tarta / Ham & Cheese Quiche",
       "items": [
-        { "nombre": "Muzarella", "precio": null }
+        { "nombre": "Jamón y muzarella /Ham & Cheese", "precio": null }
       ]
     },
     {
-      "categoria": "Tarta",
+      "categoria": "Tostado de chipá/ Grilled Chipa Sandwich",
       "items": [
-        { "nombre": "Jamón y muzarella", "precio": null }
+        { "nombre": "Jamón y queso/  Ham & chedda", "precio": 6200 },
+        { "nombre": "Crudo y queso/ Prosciutto & chedda", "precio": 7500 },
+        { "nombre": "Lomito y cheddar/ Smoked Pork Loin & cheddar", "precio": 8000 }
       ]
     },
     {
-      "categoria": "Tostado de chipá",
+      "categoria": "Medialuna XL / Crosaint",
       "items": [
-        { "nombre": "Jamón y queso", "precio": 6200 },
-        { "nombre": "Crudo y queso", "precio": 7500 },
-        { "nombre": "Lomito y cheddar", "precio": 8000 }
-      ]
-    },
-    {
-      "categoria": "Medialuna XL",
-      "items": [
-        { "nombre": "Jamón y queso", "precio": 4500 },
-        { "nombre": "Crudo y queso", "precio": 5500 },
-        { "nombre": "Lomito y cheddar", "precio": 5500 }
+        { "nombre": "Jamón y queso /  Ham & cheddar", "precio": 4500 },
+        { "nombre": "Crudo y queso/ Prosciutto & cheddar", "precio": 5500 },
+        { "nombre": "Lomito y cheddar/ Smoked Pork Loin & cheddar", "precio": 5500 }
       ]
     },
     {
@@ -70,9 +65,9 @@
     {
       "categoria": "Paninis",
       "items": [
-        { "nombre": "Jamón y queso", "precio": 4500 },
-        { "nombre": "Crudo y queso", "precio": 5500 },
-        { "nombre": "Lomito y cheddar", "precio": 5500 }
+        { "nombre": "Jamón y queso/  Ham & chedda", "precio": 4500 },
+        { "nombre": "Crudo y queso/ Prosciutto & chedda", "precio": 5500 },
+        { "nombre": "Lomito y cheddar/ Smoked Pork Loin & cheddar", "precio": 5500 }
       ]
     },
     {
@@ -85,28 +80,11 @@
     {
       "categoria": "Sándwiches",
       "items": [
-        { "nombre": "Lomito", "precio": 7500 },
-        { "nombre": "Lomito y cheddar", "precio": 8000 }
+        { "nombre": "Lomito / Ham", "precio": 7500 },
+        { "nombre": "Lomito y cheddar/ Smoked Pork Loin & cheddar", "precio": 8000 }
       ]
     },
-    {
-      "categoria": "Empanadas",
-      "items": [
-        { "nombre": "Jamón y queso", "precio": 3200 },
-        { "nombre": "Carne", "precio": 3200 }
-      ]
-    },
-    {
-      "categoria": "Papas fritas",
-      "items": [
-        { "nombre": "Papas fritas", "precio": 4500 }
-      ]
-    },
-    {
-      "categoria": "Combos",
-      "items": [
-        { "nombre": "Papas fritas + bebida", "precio": 6500 }
-      ]
-    }
+   
+  
   ]
 }
