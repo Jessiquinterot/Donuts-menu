@@ -266,10 +266,12 @@ body {
 
 .menu-section li {
   display: flex;
-  justify-content: space-between;
-  padding: 8px 0;
+  justify-content: flex-start; /* 👈 ya no los separa a los extremos */
+  gap: 16px;                   /* 👈 controla la distancia */
+  padding: 10px 0;
   font-size: 18px;
 }
+
 
 .menu-section .price {
   font-weight: bold;
