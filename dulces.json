@@ -41,8 +41,7 @@
         { "nombre": "Glaseada/Glazed Donut", "precio": 2300 },
         { "nombre": "Bañada Rocklets / Glazed Roklets", "precio": 4000 },
         { "nombre": "Bañada / Chocolate Covered", "precio": 2800 },
-        {
-          "nombre": "Rellena WOW",
+        { "nombre": "Rellena WOW",
           "precio": 5000,
           "sabores": [
             "Oreo",
@@ -120,5 +119,3 @@
     }
   ]
 }
-
-
