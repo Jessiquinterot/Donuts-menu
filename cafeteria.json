@@ -5,7 +5,7 @@
       "items": [
         { "nombre": "Espresso/ Small Black coffe", "precio": 2900 },
         { "nombre": "Cortado / Lágrima / Coffe and milk", "precio": 3600, "top": true },
-        { "nombre": "Capuccino", "precio": 4800 },
+        { "nombre": "Capuccino", "precio": 4500 },
         { "nombre": "Latte", "precio": 4800 },
         { "nombre": "Té / Tea", "precio": 2500 },
         { "nombre": "Chocolatada / Hot chocolate", "precio": 4200, "top": true },
@@ -60,7 +60,8 @@
           "sabores": [
             { "texto": "Frutilla/Strawberry", "icono": "🍓" },
             { "texto": "Maracuyá/Passion fruit", "icono": "🥭" },
-            { "texto": "Naranja o durazno/Orange or peach", "icono": "🍊" }
+            { "texto": "Frutos del Bosque/Berries", "icono": "⭐" },
+            { "texto": "Naranja + durazno/Orange & peach", "icono": "🍊" }
           ]
         },
         {
