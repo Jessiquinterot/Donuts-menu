@@ -51,14 +51,14 @@
       "items": [
         { "nombre": "Jamón y queso / Ham & cheddar", "precio": 4500 },
         { "nombre": "Crudo y queso / Prosciutto & cheddar", "precio": 5500 },
-        { "nombre": "Lomito y cheddar / Smoked Pork Loin & cheddar", "precio": 5500 }
+        { "nombre": "Lomito y cheddar / Smoked Pork Loin & cheddar", "precio": 6500 }
       ]
     },
     {
       "categoria": "Tostadas pan artesanal multisemillas /Artisan Toast",
       "items": [
         { "nombre": "Mermelada y queso /  Jam & Cheese ", "precio": 10500 },
-        { "nombre": "Palta y queso / Avocado & cream cheese", "precio": 14500 }
+        { "nombre": "Palta y queso / Avocado & cream cheese", "precio": 11800 }
       ]
     },
     {
