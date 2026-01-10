@@ -45,12 +45,12 @@
           "nombre": "Rellena Pistacho o Franui",
           "precio": 5800
         },
-        { "nombre": Rellena Oreo  / Filled with Oreo", "precio": 5000 },
-        { "nombre": Rellena Kinder Bueno / Filled with Lindt Lindor Truffle", "precio": 5000 },
-        { "nombre": Rellena Frutilla  / Filled with Strawberry", "precio": 5000 },
-        { "nombre": Rellena Coco y DDL  / Filled with Coconut & Milk Caramel", "precio": 5000 },
-        { "nombre": Rellena Chocotorta  / Filled with Caramel Spread", "precio": 5000 },
-        { "nombre": Rellena Pistacho  / Filled with Pistachio", "precio": 5000 }
+        { "nombre": "Rellena Oreo  / Filled with Oreo", "precio": 5000 },
+        { "nombre": "Rellena Kinder Bueno / Filled with Lindt Lindor Truffle", "precio": 5000 },
+        { "nombre": "Rellena Frutilla  / Filled with Strawberry", "precio": 5000 },
+        { "nombre": "Rellena Coco y DDL  / Filled with Coconut & Milk Caramel", "precio": 5000 },
+        { "nombre": "Rellena Chocotorta  / Filled with Caramel Spread", "precio": 5000 },
+        { "nombre": "Rellena Pistacho  / Filled with Pistachio", "precio": 5000 }
       ]
     },
     {
