@@ -312,5 +312,13 @@ body {
   color: #7a2e6d;
   box-shadow: 0 4px 10px rgba(0,0,0,0.15);
 }
+.page-index {
+  background: white;
+  padding-top: 0;
+}
+
+.page-index .cover {
+  background: white;
+}
 
 }
