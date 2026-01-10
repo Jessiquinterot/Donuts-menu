@@ -46,13 +46,13 @@
           "precio": 5800
         }
         { "nombre": "Rellena WOW" 
-          "Oreo",
-            "Kinder Bueno",
-            "Lindt Lindor Truffles",
-            "Frutilla / Strawberry",
-            "Coco y DDL / Coconut & Milk Caramel",
-            "Chocotorta / Cookie",
-            "Glaseada con DDL / Caramel Spread",
+          "Oreo"
+            "Kinder Bueno"
+            "Lindt Lindor Truffles"
+            "Frutilla / Strawberry"
+            "Coco y DDL / Coconut & Milk Caramel"
+            "Chocotorta / Cookie"
+            "Glaseada con DDL / Caramel Spread"
             "Pistacho / Pistachio",
           "precio": 5000,
           "sabores": [
