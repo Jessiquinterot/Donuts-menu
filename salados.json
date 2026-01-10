@@ -1,5 +1,5 @@
 {
-  "salados/Savory": [
+  "salados": [
     {
       "categoria": "Scone de queso / Cheese Bread",
       "items": [
@@ -85,4 +85,3 @@
     }
   ]
 }
-
