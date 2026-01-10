@@ -34,36 +34,33 @@
         { "nombre": "Franuí/ Raspberry in Chocolate (white or Black)", "precio": 7000 }
       ]
     },
-  {
-  "categoria": "Donuts",
-  "items": [
-    { "nombre": "Mini donut", "precio": 1900 },
-    { "nombre": "Glaseada/Glazed Donut", "precio": 2300 },
-    { "nombre": "Bañada Rocklets / Glazed Roklets", "precio": 4000 },
-    { "nombre": "Bañada / Chocolate Covered", "precio": 2800 },
-
     {
-      "nombre": "Rellena WOW",
-      "precio": 5000,
-      "sabores": [
-        "Oreo",
-        "Kinder Bueno",
-        "Lindt Lindor Truffles",
-        "Frutilla / Strawberry",
-        "Coco y DDL / Coconut & Milk Caramel",
-        "Chocotorta / Cookie",
-        "Glaseada con DDL / Caramel Spread",
-        "Pistacho / Pistachio"
+      "categoria": "Donuts",
+      "items": [
+        { "nombre": "Mini donut", "precio": 1900 },
+        { "nombre": "Glaseada/Glazed Donut", "precio": 2300 },
+        { "nombre": "Bañada Rocklets / Glazed Roklets", "precio": 4000 },
+        { "nombre": "Bañada / Chocolate Covered", "precio": 2800 },
+        {
+          "nombre": "Rellena WOW",
+          "precio": 5000,
+          "sabores": [
+            "Oreo",
+            "Kinder Bueno",
+            "Lindt Lindor Truffles",
+            "Frutilla / Strawberry",
+            "Coco y DDL / Coconut & Milk Caramel",
+            "Chocotorta / Cookie",
+            "Glaseada con DDL / Caramel Spread",
+            "Pistacho / Pistachio"
+          ]
+        },
+        {
+          "nombre": "Rellena Pistacho (Pistachio) o Franui (Raspberry in Chocolate)",
+          "precio": 5800
+        }
       ]
     },
-
-    {
-      "nombre": "Rellena Pistacho (Pistachio) o Franui (Raspberry in Chocolate)",
-      "precio": 5800
-    }
-  ]
-}
-
     {
       "categoria": "Cookies",
       "items": [
@@ -77,7 +74,7 @@
       "categoria": "Budines/Loaf cakes",
       "items": [
         { "nombre": "Limón y chocolate / Lemon & chocolate", "precio": 4500 },
-        { "nombre": "Banana y chocolate /Banana Bread", "precio": 4500 }
+        { "nombre": "Banana y chocolate / Banana Bread", "precio": 4500 }
       ]
     },
     {
@@ -123,4 +120,5 @@
     }
   ]
 }
+
 
