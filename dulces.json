@@ -5,12 +5,12 @@
       "items": [
         { "nombre": "Franui / Raspberry in Chocolate", "precio": 9500 },
         { "nombre": "Franui Pink", "precio": 9500 },
-        { "nombre": "Dubai / Pistachio", "precio": 9000 },
+        { "nombre": "Dubai / Pistachio", "precio": 10000 },
         { "nombre": "Oreotorta", "precio": 8500 },
         { "nombre": "Matilda XL", "precio": 8500 },
         { "nombre": "Birthday Cake", "precio": 7500 },
         { "nombre": "Carrot Cake", "precio": 7500 },
-        { "nombre": "Red Velvet", "precio": 7500 },
+        { "nombre": "Red Velvet", "precio": 8000 },
         { "nombre": "Key Lime Pie", "precio": 9500 },
         { "nombre": "Cheesecake", "precio": 7500 },
         { "nombre": "Brownie", "precio": 7500 },
@@ -23,7 +23,7 @@
       "items": [
         { "nombre": "Paletas / Ice Cream Bar", "precio": null },
         { "nombre": "Paletas bañadas / Covered Ice Cream Bar", "precio": 3800 },
-        { "nombre": "Pote 500 / Ice Cream Tub", "precio": 3200 },
+        { "nombre": "Pote 500 / Ice Cream Tub", "precio": 7200 },
         { "nombre": "Postre helado", "precio": null },
         { "nombre": "Bombones helados", "precio": null }
       ]
@@ -37,31 +37,33 @@
     {
       "categoria": "Donuts",
       "items": [
-        { "nombre": "Mini donut", "precio": 1900 },
+        { "nombre": "Mini donut", "precio": 1800 },
         { "nombre": "Glaseada / Glazed Donut", "precio": 2300 },
         { "nombre": "Bañada Rocklets / Glazed Rocklets", "precio": 4000 },
         { "nombre": "Bañada / Chocolate Covered", "precio": 2800 },
         {
           "nombre": "Rellena Franui/Filled Raspberry in Chocolate ",
-          "precio": 5800
+          "precio": 5300
         },
         {
           "nombre": "Rellena Pistacho Dubai /Filled Pistachio with Chocolate ",
           "precio": 5800
         },
-        { "nombre": "Rellena Oreo  / Filled with Oreo", "precio": 5000 },
-        { "nombre": "Rellena Kinder Bueno / Filled with Lindt Lindor Truffle", "precio": 5000 },
-        { "nombre": "Rellena Frutilla  / Filled with Strawberry", "precio": 5000 },
-        { "nombre": "Rellena Coco y DDL  / Filled with Coconut & Milk Caramel", "precio": 5000 },
-        { "nombre": "Rellena Chocotorta  / Filled with Caramel Spread", "precio": 5000 },
-        { "nombre": "Rellena Pistacho  / Filled with Pistachio", "precio": 5000 }
+        { "nombre": "Rellena Oreo  / Filled with Oreo", "precio": 4800 },
+        { "nombre": "Rellena Kinder Bueno / Filled with Lindt Lindor Truffle", "precio": 4800 },
+        { "nombre": "Rellena Frutilla  / Filled with Strawberry", "precio": 4800 },
+        { "nombre": "Rellena Coco y DDL  / Filled with Coconut & Milk Caramel", "precio": 4800 },
+        { "nombre": "Rellena Chocotorta  / Filled with Caramel Spread", "precio": 4800 },
+        { "nombre": "Rellena Nutella  / Filled with Nutella", "precio": 4800 },
+        { "nombre": "Rellena Café / Filled with Coffe", "precio": 4800 },
+        { "nombre": "Rellena Pistacho  / Filled with Pistachio", "precio": 4800 }
       ]
     },
     {
       "categoria": "Cookies",
       "items": [
-        { "nombre": "Oreo y chips de chocolate", "precio": 3800 },
-        { "nombre": "Limón y chips de chocolate", "precio": 3800 },
+        { "nombre": "Oreo y chips de chocolate", "precio": 3200 },
+        { "nombre": "Limón y chips de chocolate", "precio": 3200 },
         { "nombre": "Pistacho y chips de chocolate", "precio": 4500 },
         { "nombre": "Red velvet y chips de chocolate", "precio": 4500 }
       ]
@@ -69,23 +71,23 @@
     {
       "categoria": "Budines / Loaf Cakes",
       "items": [
-        { "nombre": "Limón y chocolate / Lemon & Chocolate", "precio": 4500 },
-        { "nombre": "Banana y chocolate / Banana Bread", "precio": 4500 }
+        { "nombre": "Limón y chocolate / Lemon & Chocolate", "precio": 3100 },
+        { "nombre": "Banana y chocolate / Banana Bread", "precio": 4200 }
       ]
     },
     {
       "categoria": "Rolls / Cinnamon Rolls",
       "items": [
-        { "nombre": "Canela / Cinnamon Roll", "precio": 4000 },
-        { "nombre": "Pistacho y frambuesa / Pistachio & Raspberry", "precio": 5000 }
+        { "nombre": "Canela / Cinnamon Roll", "precio": 3000 },
+        { "nombre": "Pistacho y frambuesa / Pistachio & Raspberry", "precio": 5400 }
       ]
     },
     {
       "categoria": "Super Alfajores",
       "items": [
-        { "nombre": "Nutella y frutos rojos", "precio": 3500 },
-        { "nombre": "Chocolate y dulce de leche", "precio": 3500 },
-        { "nombre": "Nuez y dulce de leche", "precio": 3500 }
+        { "nombre": "Nutella y frutos rojos", "precio": 6500 },
+        { "nombre": "Chocolate y dulce de leche", "precio": 5700 },
+        { "nombre": "Nuez y dulce de leche", "precio": 5300 }
       ]
     },
     {
