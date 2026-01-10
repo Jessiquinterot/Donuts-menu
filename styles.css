@@ -320,5 +320,12 @@ body {
 .page-index .cover {
   background: white;
 }
+.menu-logo {
+  width: 110px;          /* tamaño chico y prolijo */
+  max-width: 40%;
+  margin-bottom: 16px;
+
+  border-radius: 14px;   /* suave, moderno */
+}
 
 }
