@@ -1,11 +1,11 @@
 {
   "salados/Savory": [
     {
-      "categoria": "Scone de queso/ Cheese Bread",
+      "categoria": "Scone de queso / Cheese Bread",
       "items": [
         { "nombre": "Simple", "precio": 6600 },
-        { "nombre": "Con jamón y queso/ Ham & cheddar", "precio": 7200 },
-        { "nombre": "Con crudo y queso /  Prosciutto & cheddar ", "precio": 8400 }
+        { "nombre": "Con jamón y queso / Ham & cheddar", "precio": 7200 },
+        { "nombre": "Con crudo y queso / Prosciutto & cheddar", "precio": 8400 }
       ]
     },
     {
@@ -18,11 +18,11 @@
       ]
     },
     {
-      "categoria": "Donut rellena / Filled Donut ",
+      "categoria": "Donut rellena / Filled Donut",
       "nota": "Nuestro sello, el postrecito",
       "items": [
-        { "nombre": "Jamón y queso /  Ham & cheddar", "precio": 4500 },
-        { "nombre": "Crudo y queso/ Prosciutto & cheddar", "precio": 5500 },
+        { "nombre": "Jamón y queso / Ham & cheddar", "precio": 4500 },
+        { "nombre": "Crudo y queso / Prosciutto & cheddar", "precio": 5500 },
         { "nombre": "Lomito y cheddar / Smoked Pork Loin & cheddar", "precio": 5500 }
       ]
     },
@@ -32,27 +32,26 @@
         { "nombre": "3 unidades", "precio": 8000 }
       ]
     },
-   
     {
       "categoria": "Tarta / Ham & Cheese Quiche",
       "items": [
-        { "nombre": "Jamón y muzarella /Ham & Cheese", "precio": null }
+        { "nombre": "Jamón y muzarella / Ham & Cheese", "precio": null }
       ]
     },
     {
-      "categoria": "Tostado de chipá/ Grilled Chipa Sandwich",
+      "categoria": "Tostado de chipá / Grilled Chipa Sandwich",
       "items": [
-        { "nombre": "Jamón y queso/  Ham & chedda", "precio": 6200 },
-        { "nombre": "Crudo y queso/ Prosciutto & chedda", "precio": 7500 },
-        { "nombre": "Lomito y cheddar/ Smoked Pork Loin & cheddar", "precio": 8000 }
+        { "nombre": "Jamón y queso / Ham & cheddar", "precio": 6200 },
+        { "nombre": "Crudo y queso / Prosciutto & cheddar", "precio": 7500 },
+        { "nombre": "Lomito y cheddar / Smoked Pork Loin & cheddar", "precio": 8000 }
       ]
     },
     {
-      "categoria": "Medialuna XL / Crosaint",
+      "categoria": "Medialuna XL / Croissant",
       "items": [
-        { "nombre": "Jamón y queso /  Ham & cheddar", "precio": 4500 },
-        { "nombre": "Crudo y queso/ Prosciutto & cheddar", "precio": 5500 },
-        { "nombre": "Lomito y cheddar/ Smoked Pork Loin & cheddar", "precio": 5500 }
+        { "nombre": "Jamón y queso / Ham & cheddar", "precio": 4500 },
+        { "nombre": "Crudo y queso / Prosciutto & cheddar", "precio": 5500 },
+        { "nombre": "Lomito y cheddar / Smoked Pork Loin & cheddar", "precio": 5500 }
       ]
     },
     {
@@ -65,9 +64,9 @@
     {
       "categoria": "Paninis",
       "items": [
-        { "nombre": "Jamón y queso/  Ham & chedda", "precio": 4500 },
-        { "nombre": "Crudo y queso/ Prosciutto & chedda", "precio": 5500 },
-        { "nombre": "Lomito y cheddar/ Smoked Pork Loin & cheddar", "precio": 5500 }
+        { "nombre": "Jamón y queso / Ham & cheddar", "precio": 4500 },
+        { "nombre": "Crudo y queso / Prosciutto & cheddar", "precio": 5500 },
+        { "nombre": "Lomito y cheddar / Smoked Pork Loin & cheddar", "precio": 5500 }
       ]
     },
     {
@@ -81,10 +80,9 @@
       "categoria": "Sándwiches",
       "items": [
         { "nombre": "Lomito / Ham", "precio": 7500 },
-        { "nombre": "Lomito y cheddar/ Smoked Pork Loin & cheddar", "precio": 8000 }
+        { "nombre": "Lomito y cheddar / Smoked Pork Loin & cheddar", "precio": 8000 }
       ]
-    },
-   
-  
+    }
   ]
 }
+
