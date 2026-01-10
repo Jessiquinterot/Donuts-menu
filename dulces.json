@@ -1,11 +1,11 @@
 {
   "dulces": [
     {
-      "categoria": "Tortas",
+      "categoria": "Tortas/Cakes",
       "items": [
-        { "nombre": "Franuí", "precio": 9500 },
+        { "nombre": "Franui/Raspberry in Chocolate", "precio": 9500 },
         { "nombre": "Franuí Pink", "precio": 9500 },
-        { "nombre": "Dubai", "precio": 9000 },
+        { "nombre": "Dubai/Pistachio", "precio": 9000 },
         { "nombre": "Oreotorta", "precio": 8500 },
         { "nombre": "Matilda XL", "precio": 8500 },
         { "nombre": "Birthday Cake", "precio": 7500 },
@@ -19,32 +19,51 @@
       ]
     },
     {
-      "categoria": "Vacalin",
+      "categoria": "Vacalin/Ice cream",
       "items": [
-        { "nombre": "Paletas", "precio": null },
-        { "nombre": "Paletas bañadas", "precio": 3800 },
-        { "nombre": "Pote 500", "precio": 3200 },
+        { "nombre": "Paletas/Ice Cream Bar", "precio": null },
+        { "nombre": "Paletas bañadas/ Covered Ice Cream Bar", "precio": 3800 },
+        { "nombre": "Pote 500/Ice Cream Tub", "precio": 3200 },
         { "nombre": "Postre helado", "precio": null },
         { "nombre": "Bombones helados", "precio": null }
       ]
     },
     {
-      "categoria": "Franuí",
+      "categoria": "Franuí/ Raspberry in Chocolate",
       "items": [
-        { "nombre": "Franuí", "precio": 7000 }
+        { "nombre": "Franuí/ Raspberry in Chocolate (white or Black)", "precio": 7000 }
       ]
     },
+  {
+  "categoria": "Donuts",
+  "items": [
+    { "nombre": "Mini donut", "precio": 1900 },
+    { "nombre": "Glaseada/Glazed Donut", "precio": 2300 },
+    { "nombre": "Bañada Rocklets / Glazed Roklets", "precio": 4000 },
+    { "nombre": "Bañada / Chocolate Covered", "precio": 2800 },
+
     {
-      "categoria": "Donuts",
-      "items": [
-        { "nombre": "Mini donut", "precio": 4000 },
-        { "nombre": "Glaseada", "precio": 4000 },
-        { "nombre": "Barbie", "precio": 4500 },
-        { "nombre": "Oreo", "precio": 4500 },
-        { "nombre": "Rellena WOW", "precio": 5000 },
-        { "nombre": "Rellena WOW XL", "precio": 5800 }
+      "nombre": "Rellena WOW",
+      "precio": 5000,
+      "sabores": [
+        "Oreo",
+        "Kinder Bueno",
+        "Lindt Lindor Truffles",
+        "Frutilla / Strawberry",
+        "Coco y DDL / Coconut & Milk Caramel",
+        "Chocotorta / Cookie",
+        "Glaseada con DDL / Caramel Spread",
+        "Pistacho / Pistachio"
       ]
     },
+
+    {
+      "nombre": "Rellena Pistacho (Pistachio) o Franui (Raspberry in Chocolate)",
+      "precio": 5800
+    }
+  ]
+}
+
     {
       "categoria": "Cookies",
       "items": [
@@ -55,60 +74,51 @@
       ]
     },
     {
-      "categoria": "Budines",
+      "categoria": "Budines/Loaf cakes",
       "items": [
-        { "nombre": "Limón y chocolate", "precio": 4500 },
-        { "nombre": "Banana y chocolate", "precio": 4500 }
+        { "nombre": "Limón y chocolate / Lemon & chocolate", "precio": 4500 },
+        { "nombre": "Banana y chocolate /Banana Bread", "precio": 4500 }
       ]
     },
     {
-      "categoria": "Rolls",
+      "categoria": "Rolls/ Cinnamon Roll",
       "items": [
-        { "nombre": "Canela", "precio": 4000 },
-        { "nombre": "Pistacho y frambuesa", "precio": 5000 }
+        { "nombre": "Canela/Cinnamon Roll", "precio": 4000 },
+        { "nombre": "Pistacho y frambuesa/Pistachio and raspberry", "precio": 5000 }
       ]
     },
     {
       "categoria": "Brownie",
       "items": [
-        { "nombre": "Con crema y salsa", "precio": 6000 }
+        { "nombre": "Con crema y salsa/With cream and sauce", "precio": 6000 }
       ]
     },
     {
       "categoria": "Blondie",
       "items": [
-        { "nombre": "Chocolate, pistacho y frambuesa", "precio": 5500 }
-      ]
-    },
-    {
-      "categoria": "Brookie",
-      "items": [
-        { "nombre": "Surtido", "precio": 6000 }
+        { "nombre": "Chocolate, pistacho y frambuesa/Pistachio and raspberry", "precio": 5500 }
       ]
     },
     {
       "categoria": "Super Alfajores",
       "items": [
-        { "nombre": "Nutella y frutos rojos", "precio": 3500 },
+        { "nombre": "Nutella y frutos rojos/Nutella and berries", "precio": 3500 },
         { "nombre": "Choco y dulce de leche", "precio": 3500 },
-        { "nombre": "Nuez y dulce de leche", "precio": 3500 }
+        { "nombre": "Nuez y dulce de leche/Walnut", "precio": 3500 }
       ]
     },
     {
-      "categoria": "Medialunas",
+      "categoria": "Medialunas/Croissants",
       "items": [
-        { "nombre": "x1", "precio": 2500 },
-        { "nombre": "x12", "precio": 30000 }
+        { "nombre": "x1", "precio": 600 },
+        { "nombre": "x12", "precio": 7200 }
       ]
     },
     {
       "categoria": "Decilo con Donuts",
       "items": [
-        { "nombre": "Feliz cumple", "precio": null },
-        { "nombre": "Te amo", "precio": null },
-        { "nombre": "Feliz aniversario", "precio": null },
-        { "nombre": "Te extraño", "precio": null },
-        { "nombre": "Con glaseado especial", "precio": null }
+        { "nombre": "Feliz cumple", "precio": 36000 },
+        { "nombre": "Feliz cumple relleno", "precio": 38000 }
       ]
     }
   ]
