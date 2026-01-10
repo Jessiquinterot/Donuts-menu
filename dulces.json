@@ -41,7 +41,19 @@
         { "nombre": "Glaseada/Glazed Donut", "precio": 2300 },
         { "nombre": "Bañada Rocklets / Glazed Roklets", "precio": 4000 },
         { "nombre": "Bañada / Chocolate Covered", "precio": 2800 },
-        { "nombre": "Rellena WOW",
+        {
+          "nombre": "Rellena Pistacho (Pistachio) o Franui (Raspberry in Chocolate)",
+          "precio": 5800
+        }
+        { "nombre": "Rellena WOW 
+          "Oreo",
+            "Kinder Bueno",
+            "Lindt Lindor Truffles",
+            "Frutilla / Strawberry",
+            "Coco y DDL / Coconut & Milk Caramel",
+            "Chocotorta / Cookie",
+            "Glaseada con DDL / Caramel Spread",
+            "Pistacho / Pistachio"",
           "precio": 5000,
           "sabores": [
             "Oreo",
@@ -54,10 +66,7 @@
             "Pistacho / Pistachio"
           ]
         },
-        {
-          "nombre": "Rellena Pistacho (Pistachio) o Franui (Raspberry in Chocolate)",
-          "precio": 5800
-        }
+
       ]
     },
     {
