@@ -3,8 +3,8 @@
     {
       "titulo": "Cafetería/Coffe Hot",
       "items": [
-        { "nombre": "Espresso", "precio": 2900 },
-        { "nombre": "Cortado / Lágrima / Americano", "precio": 3600, "top": true },
+        { "nombre": "Espresso/ Small Black coffe", "precio": 2900 },
+        { "nombre": "Cortado / Lágrima / Coffe and milk", "precio": 3600, "top": true },
         { "nombre": "Capuccino", "precio": 4800 },
         { "nombre": "Latte", "precio": 4800 },
         { "nombre": "Té / Tea", "precio": 2500 },
