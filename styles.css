@@ -8,24 +8,21 @@
 /* ===== BASE ===== */
 body {
   font-family: Arial, sans-serif;
-  background: #f6dcb5;
+  background: #e63b5b;            /* ROSA GLOBAL */
   color: #3a2a1f;
   font-size: 18px;
   line-height: 1.4;
-  padding-top: 90px; /* barra fija */
 }
 
-/* ===== PORTADA ===== */
+/* ===== PORTADA (INDEX) ===== */
 .cover {
-  background: white;
+  background: #e63b5b;            /* MISMO ROSA */
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
-.cover-inner {
-  border: 10px solid #e63b5b;
-  border-radius: 22px;
-}
-
-
 
 .cover-inner {
   width: 100%;
@@ -42,6 +39,7 @@ body {
   align-items: flex-end;
 }
 
+/* ===== BOTONES IDIOMA ===== */
 .lang-bar {
   margin-bottom: 28px;
   display: flex;
@@ -50,7 +48,7 @@ body {
 
 .lang-btn {
   background: white;
-  color: #7a2e6d;              /* violeta del logo */
+  color: #7a2e6d;
   border: none;
 
   padding: 16px 28px;
@@ -63,7 +61,6 @@ body {
   box-shadow: 0 4px 10px rgba(0,0,0,0.15);
 }
 
-
 /* ===== BARRA SUPERIOR ===== */
 .top-bar {
   position: fixed;
@@ -73,26 +70,28 @@ body {
   z-index: 999;
 
   background: #e63b5b;
-  padding: 26px 20px;
+  padding: 20px 14px;
+
   display: flex;
-  gap: 16px;
+  gap: 12px;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .nav-btn,
 .back-btn {
   background: #ffd966;
   border: none;
-  padding: 16px 26px;
-  border-radius: 28px;
+  padding: 12px 18px;
+  border-radius: 22px;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 15px;
   cursor: pointer;
 }
 
 /* ===== CONTENEDOR ===== */
 .container {
-  padding: 20px;
+  padding: 120px 20px 20px; /* espacio para barra */
 }
 
 #menu-content {
@@ -136,53 +135,13 @@ body {
   cursor: pointer;
 }
 
-/* ===== PROMOS ===== */
-.card {
-  position: relative;   /* 👈 ESTA ES LA CLAVE */
-  background: #fff3dc;
-  border-radius: 24px;
-  padding: 24px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-}
-
-
-.card h3 {
-  font-size: 20px;
-  margin-bottom: 8px;
-}
-
-.card p {
-  font-size: 16px;
-  margin-bottom: 14px;
-}
-.promo-badge {
-  position: absolute;
-  top: -12px;
-  left: 16px;
-
-  background: #4cc7b0;     /* azul verdoso */
-  color: white;
-
-  font-size: 12px;
-  font-weight: bold;
-  padding: 6px 12px;
-
-  border-radius: 14px;
-  letter-spacing: 0.5px;
-}
-
-.card .price {
-  font-size: 22px;
-  font-weight: bold;
-  color: #e63b5b;
-  text-align: right;
-}
-
-/* ===== DULCES / SALADOS ===== */
+/* ===== TARJETAS / SECCIONES ===== */
+.card,
 .menu-section {
   background: #fff3dc;
   border-radius: 24px;
   padding: 22px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
 }
 
 .menu-section h2 {
@@ -202,85 +161,35 @@ body {
   font-size: 18px;
 }
 
-.menu-section .price {
+.price {
   font-weight: bold;
 }
 
-/* ===== RESPONSIVE ===== */
-@media (max-width: 480px) {
-  .menu-title {
-    font-size: 28px;
-  }
-
-  .menu-btn.big {
-    width: 220px;
-    font-size: 20px;
-  }
-  /* ===== ITEMS CAFETERÍA ===== */
-.menu-item {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
-
-/* Título del producto */
-.item-title {
-  font-weight: bold;
-  font-size: 20px;
-}
-
-/* ===== SABORES ===== */
-.flavors {
-  list-style: none;
-  padding: 0;
-  margin: 6px 0 10px;
-
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 6px 12px;
-}
-
-.flavors li {
-  font-size: 15px;
-  background: rgba(230, 59, 91, 0.08);
-  padding: 6px 10px;
-  border-radius: 14px;
-  display: flex;
-  align-items: center;
-  gap: 6px;
-}
+/* ===== SABORES / LISTAS ===== */
 .flavors {
   margin-top: 8px;
   padding-left: 0;
   list-style: none;
-  font-size: 15px;
-  color: #5a4032;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
 }
 
 .flavors li {
-  display: inline-block;
-  margin-right: 10px;
-  margin-top: 4px;
   background: #ffe9c9;
-  padding: 4px 8px;
-  border-radius: 12px;
+  padding: 4px 10px;
+  border-radius: 14px;
+  font-size: 14px;
   font-weight: 500;
 }
-.menu-item {
-  display: flex;
-  justify-content: space-between;
-  gap: 12px;
-}
 
-.item-left {
-  max-width: 75%;
-}
-
+/* ===== BADGES ===== */
 .badges {
-  margin: 6px 0;
   display: flex;
   gap: 6px;
   flex-wrap: wrap;
+  margin-top: 6px;
 }
 
 .badge {
@@ -291,47 +200,33 @@ body {
   color: white;
 }
 
-.badge.top {
-  background: #f5a623; /* ⭐ */
-}
+.badge.wow { background: #e63b5b; }
+.badge.top { background: #f5a623; }
+.badge.hot { background: #ff7043; }
+.badge.cold { background: #4fc3f7; }
 
-.badge.wow {
-  background: #e63b5b; /* 🔥 */
-}
-
-.badge.hot {
-  background: #ff7043;
-}
-
-.badge.cold {
-  background: #4fc3f7;
-}
-/* ===== SOLO INDEX: BOTONES IDIOMA SIN AMARILLO ===== */
-.cover .lang-btn {
-  background: #ffffff;
-  color: #7a2e6d;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-}
-.page-index {
-  background: white;
-  padding-top: 0;
-}
-
-.page-index .cover {
-  background: white;
-}
+/* ===== LOGO MENU ===== */
 .menu-logo {
-  width: 99px;          /* tamaño chico y prolijo */
-  max-width: 40%;
+  width: 90px;
   margin-bottom: 16px;
-
-  border-radius: 14px;   /* suave, moderno */
-}
-.cafeteria-page .nav-btn,
-.cafeteria-page .back-btn {
-  padding: 10px 16px;
-  font-size: 14px;
-  border-radius: 18px;
+  border-radius: 14px;
 }
 
+/* ===== RESPONSIVE ===== */
+@media (max-width: 480px) {
+
+  .menu-title {
+    font-size: 28px;
+  }
+
+  .menu-btn.big {
+    width: 220px;
+    font-size: 20px;
+  }
+
+  .nav-btn,
+  .back-btn {
+    font-size: 13px;
+    padding: 10px 14px;
+  }
 }
