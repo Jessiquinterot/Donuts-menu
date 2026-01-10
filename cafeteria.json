@@ -1,20 +1,20 @@
 {
   "secciones": [
     {
-      "titulo": "Cafetería",
+      "titulo": "Cafetería/Coffe Hot",
       "items": [
         { "nombre": "Espresso", "precio": 2900 },
-        { "nombre": "Cortado / Lágrima", "precio": 3600, "top": true },
+        { "nombre": "Cortado / Lágrima / Americano", "precio": 3600, "top": true },
         { "nombre": "Capuccino", "precio": 4800 },
         { "nombre": "Latte", "precio": 4800 },
-        { "nombre": "Té", "precio": 2500 },
-        { "nombre": "Chocolatada", "precio": 4200, "top": true },
-        { "nombre": "Café para llevar", "precio": 3800 },
-        { "nombre": "Latte para llevar", "precio": 5000 }
+        { "nombre": "Té / Tea", "precio": 2500 },
+        { "nombre": "Chocolatada / Hot chocolate", "precio": 4200, "top": true },
+        { "nombre": "Café para llevar / Coffe to go", "precio": 3800 },
+        { "nombre": "Latte para llevar / Latte to go", "precio": 5000 }
       ]
     },
     {
-      "titulo": "Latte WOW Caliente",
+      "titulo": "Latte WOW Caliente / Hot latte ",
       "items": [
         {
           "nombre": "Latte WOW caliente",
@@ -24,16 +24,16 @@
           "top": true,
           "sabores": [
             { "texto": "Chocolate", "icono": "🍫" },
-            { "texto": "Dulce de leche", "icono": "⭐" },
-            { "texto": "Pistacho", "icono": "🥜" },
-            { "texto": "Vainilla", "icono": "🍦" },
+            { "texto": "Dulce de leche/ Caramel Latte", "icono": "⭐" },
+            { "texto": "Pistacho / Pistachio Latte", "icono": "🥜" },
+            { "texto": "Vainilla /Vanilla Latte", "icono": "🍦" },
             { "texto": "Kinder / Nutella", "icono": "🔥" }
           ]
         }
       ]
     },
     {
-      "titulo": "Latte WOW Frío",
+      "titulo": "Latte WOW Frío / Iced Latte",
       "items": [
         {
           "nombre": "Latte WOW frío",
@@ -42,10 +42,10 @@
           "temperatura": "frio",
           "sabores": [
             { "texto": "Chocolate", "icono": "🍫" },
-            { "texto": "Dulce de leche", "icono": "⭐" },
-            { "texto": "Pistacho", "icono": "🥜" },
-            { "texto": "Chocolate blanco", "icono": "🤍" },
-            { "texto": "Vainilla / Avellanas", "icono": "🍦" }
+            { "texto": "Dulce de leche / Carael Latte", "icono": "⭐" },
+            { "texto": "Pistacho / Pistachio Latte", "icono": "🥜" },
+            { "texto": "Chocolate blanco / White chocolate", "icono": "🤍" },
+            { "texto": "Vainilla / Avellanas / Vanilla or Hazelnut", "icono": "🍦" }
           ]
         }
       ]
@@ -54,17 +54,17 @@
       "titulo": "Smoothies",
       "items": [
         {
-          "nombre": "Smoothie con agua",
+          "nombre": "Smoothie con agua (Water)",
           "precio": 5800,
           "temperatura": "frio",
           "sabores": [
-            { "texto": "Frutilla", "icono": "🍓" },
-            { "texto": "Maracuyá", "icono": "🥭" },
-            { "texto": "Naranja – durazno", "icono": "🍊" }
+            { "texto": "Frutilla/Strawberry", "icono": "🍓" },
+            { "texto": "Maracuyá/Passion fruit", "icono": "🥭" },
+            { "texto": "Naranja o durazno/Orange or peach", "icono": "🍊" }
           ]
         },
         {
-          "nombre": "Smoothie con leche",
+          "nombre": "Smoothie con leche (Witch Milk)",
           "precio": 6800,
           "temperatura": "frio"
         
@@ -81,7 +81,7 @@
           "temperatura": "frio",
           "sabores": [
             { "texto": "Vainilla", "icono": "🍦" },
-            { "texto": "Chocolate blanco", "icono": "🤍" },
+            { "texto": "Chocolate blanco (white Chocolate)", "icono": "🤍" },
             { "texto": "Chocolate", "icono": "🍫" }
           ]
         },
