@@ -55,14 +55,14 @@
       ]
     },
     {
-      "categoria": "Tostadas pan artesanal multisemillas",
+      "categoria": "Tostadas pan artesanal multisemillas /Artisan Toast",
       "items": [
-        { "nombre": "Mermelada y queso", "precio": 10500 },
-        { "nombre": "Palta y queso", "precio": 14500 }
+        { "nombre": "Mermelada y queso /  Jam & Cheese ", "precio": 10500 },
+        { "nombre": "Palta y queso / Avocado & cream cheese", "precio": 14500 }
       ]
     },
     {
-      "categoria": "Paninis",
+      "categoria": "Paninis/ Panini Sandwiches",
       "items": [
         { "nombre": "Jamón y queso / Ham & cheddar", "precio": 4500 },
         { "nombre": "Crudo y queso / Prosciutto & cheddar", "precio": 5500 },
