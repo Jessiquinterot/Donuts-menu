@@ -12,20 +12,18 @@ body {
   color: #3a2a1f;
   font-size: 18px;
   line-height: 1.4;
-  padding-top: 90px; /* barra fija */
+  padding-top: 90px; /* barra fija (paginas internas) */
 }
 
-/* ===== PORTADA ===== */
+/* ===== PORTADA (INDEX) ===== */
 .cover {
   background: white;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
 }
-
-.cover-inner {
-  border: 10px solid #e63b5b;
-  border-radius: 22px;
-}
-
-
 
 .cover-inner {
   width: 100%;
@@ -36,6 +34,9 @@ body {
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
+
+  border: 10px solid #e63b5b;
+  border-radius: 22px;
 
   display: flex;
   justify-content: center;
@@ -50,7 +51,7 @@ body {
 
 .lang-btn {
   background: white;
-  color: #7a2e6d;              /* violeta del logo */
+  color: #7a2e6d; /* violeta del logo */
   border: none;
 
   padding: 16px 28px;
@@ -63,6 +64,27 @@ body {
   box-shadow: 0 4px 10px rgba(0,0,0,0.15);
 }
 
+/* ===== SOLO INDEX (si usas body class="page-index") ===== */
+.page-index {
+  background: white;
+  padding-top: 0; /* sin barra */
+}
+
+.page-index .cover {
+  background: white;
+  padding: 16px;
+}
+
+.page-index .cover-inner {
+  border: none;       /* si querés SIN marco en index */
+  border-radius: 0;
+}
+
+.page-index .lang-btn {
+  background: #e63b5b;
+  color: white;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
 
 /* ===== BARRA SUPERIOR ===== */
 .top-bar {
@@ -95,6 +117,8 @@ body {
   padding: 20px;
 }
 
+/* IMPORTANT: usamos clase, no solo #id */
+.menu-content,
 #menu-content {
   max-width: 720px;
   margin: 0 auto;
@@ -103,50 +127,72 @@ body {
   gap: 18px;
 }
 
-/* ===== MENU HOME ===== */
+/* ===== MENU HOME (menu.html) ===== */
 .menu-home {
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 30px;
+  padding: 20px;
+}
+
+/* ===== MARCO / CARD MENU PRINCIPAL ===== */
+.menu-card {
+  background: #ffffff;
+  border: 4px solid #e63b5b;   /* marco rosa */
+  border-radius: 26px;
+
+  padding: 28px 24px;
+  width: 100%;
+  max-width: 420px;
+
+  box-shadow: 0 8px 20px rgba(230, 59, 91, 0.25);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.menu-logo {
+  width: 109px;
+  max-width: 40%;
+  margin-bottom: 16px;
+  border-radius: 14px;
 }
 
 .menu-title {
   font-size: 38px;
   font-weight: 900;
-  color: #e63b5b;              /* rosa marca */
-  margin-bottom: 24px;
+  color: #e63b5b;
+  margin-bottom: 18px;
   text-align: center;
-
   letter-spacing: 0.5px;
 }
 
-/* subrayado suave tipo highlight */
 .menu-title::after {
   content: "";
   display: block;
   width: 70px;
   height: 6px;
   margin: 10px auto 0;
-  text-shadow: 0 2px 8px rgba(230, 59, 91, 0.25);
-
-  background: #ffd1dc;        /* rosa pastel */
+  background: #ffd1dc;
   border-radius: 10px;
 }
 
-
+/* botones menu */
 .menu-choice {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 16px;
+  width: 100%;
 }
 
 .menu-btn.big {
-  width: 260px;
+  width: 100%;
+  max-width: 300px;
   padding: 22px;
-  font-size: 22px;
+  font-size: 20px;
   border-radius: 32px;
   background: #e63b5b;
   color: white;
@@ -157,13 +203,12 @@ body {
 
 /* ===== PROMOS ===== */
 .card {
-  position: relative;   /* 👈 ESTA ES LA CLAVE */
+  position: relative;
   background: #fff3dc;
   border-radius: 24px;
   padding: 24px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.15);
 }
-
 
 .card h3 {
   font-size: 20px;
@@ -174,12 +219,13 @@ body {
   font-size: 16px;
   margin-bottom: 14px;
 }
+
 .promo-badge {
   position: absolute;
   top: -12px;
   left: 16px;
 
-  background: #4cc7b0;     /* azul verdoso */
+  background: #4cc7b0;
   color: white;
 
   font-size: 12px;
@@ -197,17 +243,19 @@ body {
   text-align: right;
 }
 
-/* ===== DULCES / SALADOS ===== */
+/* ===== DULCES / SALADOS / CAFETERÍA ===== */
 .menu-section {
   background: #fff3dc;
   border-radius: 24px;
   padding: 22px;
+  margin-bottom: 22px;
 }
 
 .menu-section h2 {
   font-size: 24px;
   margin-bottom: 10px;
   border-bottom: 3px solid #e63b5b;
+  padding-bottom: 6px;
 }
 
 .menu-section ul {
@@ -217,7 +265,7 @@ body {
 .menu-section li {
   display: flex;
   justify-content: space-between;
-  padding: 10px 0;
+  padding: 12px 0;
   font-size: 18px;
 }
 
@@ -225,30 +273,13 @@ body {
   font-weight: bold;
 }
 
-/* ===== RESPONSIVE ===== */
-@media (max-width: 480px) {
-  .menu-title {
-    font-size: 28px;
-  }
-
-  .menu-btn.big {
-    width: 220px;
-    font-size: 20px;
-  }
-  /* ===== ITEMS CAFETERÍA ===== */
+/* ===== CAFETERÍA: sabores y badges (si los usas) ===== */
 .menu-item {
   display: flex;
   flex-direction: column;
   gap: 8px;
 }
 
-/* Título del producto */
-.item-title {
-  font-weight: bold;
-  font-size: 20px;
-}
-
-/* ===== SABORES ===== */
 .flavors {
   list-style: none;
   padding: 0;
@@ -268,32 +299,6 @@ body {
   align-items: center;
   gap: 6px;
 }
-.flavors {
-  margin-top: 8px;
-  padding-left: 0;
-  list-style: none;
-  font-size: 15px;
-  color: #5a4032;
-}
-
-.flavors li {
-  display: inline-block;
-  margin-right: 10px;
-  margin-top: 4px;
-  background: #ffe9c9;
-  padding: 4px 8px;
-  border-radius: 12px;
-  font-weight: 500;
-}
-.menu-item {
-  display: flex;
-  justify-content: space-between;
-  gap: 12px;
-}
-
-.item-left {
-  max-width: 75%;
-}
 
 .badges {
   margin: 6px 0;
@@ -310,42 +315,12 @@ body {
   color: white;
 }
 
-.badge.top {
-  background: #f5a623; /* ⭐ */
-}
+.badge.top { background: #f5a623; }
+.badge.wow { background: #e63b5b; }
+.badge.hot { background: #ff7043; }
+.badge.cold { background: #4fc3f7; }
 
-.badge.wow {
-  background: #e63b5b; /* 🔥 */
-}
-
-.badge.hot {
-  background: #ff7043;
-}
-
-.badge.cold {
-  background: #4fc3f7;
-}
-/* ===== SOLO INDEX: BOTONES IDIOMA SIN AMARILLO ===== */
-.cover .lang-btn {
-  background: #ffffff;
-  color: #7a2e6d;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-}
-.page-index {
-  background: white;
-  padding-top: 0;
-}
-
-.page-index .cover {
-  background: white;
-}
-.menu-logo {
-  width: 109px;          /* tamaño chico y prolijo */
-  max-width: 40%;
-  margin-bottom: 16px;
-
-  border-radius: 14px;   /* suave, moderno */
-}
+/* ===== BOTONES CHICOS SOLO EN CAFETERÍA (si usas body class="cafeteria-page") ===== */
 .cafeteria-page .nav-btn,
 .cafeteria-page .back-btn {
   padding: 10px 16px;
@@ -353,95 +328,58 @@ body {
   border-radius: 18px;
 }
 
-}/* ===== SOLO INDEX ===== */
-
-.page-index {
-  background: white;
-  padding-top: 0; /* sin barra arriba */
-}
-
-/* fondo del index */
-.page-index .cover {
-  background: white;
-  min-height: 100vh;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-/* quitar marco rojo SOLO en index */
-.page-index .cover-inner {
-  border: none;
-  border-radius: 0;
-}
-
-/* botones idioma SOLO index */
-.page-index .lang-btn {
-  background: #e63b5b;   /* ROSA */
-  color: white;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-}
 /* ===== LOGO ANIMADO CON GLOW ===== */
 .pulse-glow {
   animation: pulseGlow 2.8s ease-in-out infinite;
   border-radius: 16px;
 }
 
-/* Animación combinada */
 @keyframes pulseGlow {
   0% {
     transform: scale(1);
     box-shadow: 0 0 0 rgba(230, 59, 91, 0);
   }
-
   50% {
     transform: scale(1.06);
     box-shadow:
       0 0 18px rgba(230, 59, 91, 0.35),
       0 0 35px rgba(230, 59, 91, 0.25);
   }
-
   100% {
     transform: scale(1);
     box-shadow: 0 0 0 rgba(230, 59, 91, 0);
   }
-
-  /* ===== ESCALA UNIFICADA PARA MENÚS ===== */
-.menu-content {
-  max-width: 720px;
-  margin: 0 auto;
 }
 
-/* Dulces: mismo look que cafetería */
-.menu-section {
-  font-size: 18px;
-}
+/* ===== RESPONSIVE ===== */
+@media (max-width: 480px) {
+  body {
+    font-size: 16px;
+  }
 
-.menu-section li {
-  padding: 12px 0;
-}
+  .menu-title {
+    font-size: 28px;
+  }
 
-/* Más aire visual */
-.menu-section {
-  margin-bottom: 22px;
-}
-/* ===== MENU PRINCIPAL (menu.html) ===== */
-.menu-card {
-  background: #ffffff;
-  border: 4px solid #e63b5b;   /* ROSA */
-  border-radius: 26px;
+  .menu-btn.big {
+    font-size: 18px;
+    padding: 18px;
+  }
 
-  padding: 28px 24px;
-  width: 100%;
-  max-width: 420px;
+  .top-bar {
+    padding: 18px 14px;
+    gap: 10px;
+  }
 
-  box-shadow: 0 8px 20px rgba(230, 59, 91, 0.25);
+  .nav-btn,
+  .back-btn {
+    font-size: 14px;
+    padding: 10px 14px;
+    border-radius: 18px;
+  }
 
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
+  .flavors {
+    grid-template-columns: 1fr;
+  }
 }
 
