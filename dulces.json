@@ -42,7 +42,11 @@
         { "nombre": "Bañada Rocklets / Glazed Rocklets", "precio": 4000 },
         { "nombre": "Bañada / Chocolate Covered", "precio": 2800 },
         {
-          "nombre": "Rellena Pistacho o Franui",
+          "nombre": "Rellena Franui/Filled Raspberry in Chocolate ",
+          "precio": 5800
+        },
+        {
+          "nombre": "Rellena Pistacho Dubai (Filled Pistachio with Chocolate) ",
           "precio": 5800
         },
         { "nombre": "Rellena Oreo  / Filled with Oreo", "precio": 5000 },
