@@ -406,5 +406,26 @@ body {
     transform: scale(1);
     box-shadow: 0 0 0 rgba(230, 59, 91, 0);
   }
+
+  /* ===== ESCALA UNIFICADA PARA MENÚS ===== */
+.menu-content {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+/* Dulces: mismo look que cafetería */
+.menu-section {
+  font-size: 18px;
+}
+
+.menu-section li {
+  padding: 12px 0;
+}
+
+/* Más aire visual */
+.menu-section {
+  margin-bottom: 22px;
+}
+
 }
 
