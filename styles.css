@@ -1,36 +1,18 @@
-/* ===== FUENTE OFICIAL DONUT MAKERS ===== */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800;900&display=swap');
-
-:root {
-  --dm-rosa: #e63b5b;
-  --dm-beige: #f6dcb5;
-  --dm-texto: #3a2a1f;
-}
-
-/* Fuente base */
-body {
-  font-family: 'Montserrat', Arial, sans-serif;
-  color: var(--dm-texto);
-}
-
-/* Títulos */
-.menu-title,
-.menu-section h2,
-.card h3 {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 800;
-}
-
-/* Botones */
-.menu-btn.big,
-.nav-btn,
-.back-btn,
-.lang-btn {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
-}
-
 /* ===== RESET ===== */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -417,66 +399,4 @@ body {
   .flavors {
     grid-template-columns: 1fr;
   }
-
-  /* ===== FIX COLORES DONUT MAKERS (POST-FUENTE) ===== */
-
-/* Colores base */
-body {
-  background: #f6dcb5;
-  color: #3a2a1f;
 }
-
-/* Barra superior */
-.top-bar {
-  background: #e63b5b;
-}
-
-/* Botones navegación */
-.nav-btn,
-.back-btn {
-  background: #ffd966;
-  color: #3a2a1f;
-}
-
-/* Botones menú principal */
-.menu-btn.big {
-  background: #e63b5b;
-  color: white;
-}
-
-/* Título menú */
-.menu-title {
-  color: #e63b5b;
-}
-
-/* Subrayado título */
-.menu-title::after {
-  background: #ffd1dc;
-}
-
-/* Cards / secciones */
-.menu-section,
-.card {
-  background: #fff3dc;
-}
-
-/* Precios */
-.price {
-  color: #e63b5b;
-  font-weight: 700;
-}
-
-/* Promo badge */
-.promo-badge {
-  background: #4cc7b0;
-  color: white;
-}
-
-/* Botones idioma index */
-.page-index .lang-btn {
-  background: #e63b5b;
-  color: white;
-}
-
-}
-
