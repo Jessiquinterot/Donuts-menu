@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const path = window.location.pathname.toLowerCase();
 
-  /* ===== PROMOS ===== */
+  /* ================= PROMOS ================= */
   if (path.includes("promos.html")) {
     fetch("promos.json")
       .then(res => {
@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", () => {
     return;
   }
 
-  /* ===== DULCES / SALADOS ===== */
+  /* ================= DULCES / SALADOS ================= */
   let jsonFile = "";
   let rootKey = "";
 
@@ -67,10 +67,17 @@ document.addEventListener("DOMContentLoaded", () => {
           html += `
             <li class="menu-item">
               <div class="item-left">
-                <span class="item-title">${item.nombre}</span>
+
+                <!-- FILA NOMBRE + PRECIO -->
+                <div class="item-row">
+                  <span class="item-title">${item.nombre}</span>
+                  <span class="price">
+                    ${item.precio !== null ? "$ " + Number(item.precio).toLocaleString("es-AR") : ""}
+                  </span>
+                </div>
           `;
 
-          /* ===== SABORES (SOLO SI EXISTEN) ===== */
+          /* ===== SABORES (solo si existen) ===== */
           if (item.sabores && Array.isArray(item.sabores)) {
             html += `<ul class="flavors">`;
             item.sabores.forEach(sabor => {
@@ -81,9 +88,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
           html += `
               </div>
-              <span class="price">
-                ${item.precio !== null ? "$ " + Number(item.precio).toLocaleString("es-AR") : ""}
-              </span>
             </li>
           `;
         });
@@ -97,5 +101,7 @@ document.addEventListener("DOMContentLoaded", () => {
       container.innerHTML = "<p>Error cargando menú</p>";
       console.error(err);
     });
+});
+
 });
 
