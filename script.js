@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const path = window.location.pathname.toLowerCase();
 
-  /* ================= PROMOS ================= */
+  /* ===== PROMOS ===== */
   if (path.includes("promos.html")) {
     fetch("promos.json")
       .then(res => {
@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", () => {
     return;
   }
 
-  /* ================= DULCES / SALADOS ================= */
+  /* ===== DULCES / SALADOS ===== */
   let jsonFile = "";
   let rootKey = "";
 
@@ -62,37 +62,18 @@ document.addEventListener("DOMContentLoaded", () => {
         }
 
         html += `<ul>`;
-
         section.items.forEach(item => {
           html += `
-            <li class="menu-item">
-              <div class="item-left">
-
-                <!-- FILA NOMBRE + PRECIO -->
-                <div class="item-row">
-                  <span class="item-title">${item.nombre}</span>
-                  <span class="price">
-                    ${item.precio !== null ? "$ " + Number(item.precio).toLocaleString("es-AR") : ""}
-                  </span>
-                </div>
-          `;
-
-          /* ===== SABORES (solo si existen) ===== */
-          if (item.sabores && Array.isArray(item.sabores)) {
-            html += `<ul class="flavors">`;
-            item.sabores.forEach(sabor => {
-              html += `<li>${sabor}</li>`;
-            });
-            html += `</ul>`;
-          }
-
-          html += `
-              </div>
+            <li>
+              <span>${item.nombre}</span>
+              <span class="price">
+                ${item.precio !== null ? "$ " + Number(item.precio).toLocaleString("es-AR") : ""}
+              </span>
             </li>
           `;
         });
-
         html += `</ul>`;
+
         block.innerHTML = html;
         container.appendChild(block);
       });
@@ -101,7 +82,7 @@ document.addEventListener("DOMContentLoaded", () => {
       container.innerHTML = "<p>Error cargando menú</p>";
       console.error(err);
     });
-});
+})
 
-});
+
 
