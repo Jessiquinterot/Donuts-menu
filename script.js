@@ -62,18 +62,33 @@ document.addEventListener("DOMContentLoaded", () => {
         }
 
         html += `<ul>`;
+
         section.items.forEach(item => {
           html += `
-            <li>
-              <span>${item.nombre}</span>
+            <li class="menu-item">
+              <div class="item-left">
+                <span class="item-title">${item.nombre}</span>
+          `;
+
+          /* ===== SABORES (SOLO SI EXISTEN) ===== */
+          if (item.sabores && Array.isArray(item.sabores)) {
+            html += `<ul class="flavors">`;
+            item.sabores.forEach(sabor => {
+              html += `<li>${sabor}</li>`;
+            });
+            html += `</ul>`;
+          }
+
+          html += `
+              </div>
               <span class="price">
                 ${item.precio !== null ? "$ " + Number(item.precio).toLocaleString("es-AR") : ""}
               </span>
             </li>
           `;
         });
-        html += `</ul>`;
 
+        html += `</ul>`;
         block.innerHTML = html;
         container.appendChild(block);
       });
@@ -83,3 +98,4 @@ document.addEventListener("DOMContentLoaded", () => {
       console.error(err);
     });
 });
+
