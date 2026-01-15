@@ -1,117 +1,390 @@
 
-document.addEventListener("DOMContentLoaded", () => {
-  const container = document.getElementById("menu-content");
-  if (!container) return;
-
-  const path = window.location.pathname.toLowerCase();
-/* ===== FUENTE OFICIAL DONUT MAKERS ===== */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800;900&display=swap');
-
-:root {
-  --dm-rosa: #e63b5b;
-  --dm-beige: #f6dcb5;
-  --dm-texto: #3a2a1f;
+/* ===== RESET ===== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-/* Fuente base */
+/* ===== BASE ===== */
 body {
-  font-family: 'Montserrat', Arial, sans-serif;
-  color: var(--dm-texto);
+  font-family: Arial, sans-serif;
+  background: #f6dcb5;
+  color: #3a2a1f;
+  font-size: 18px;
+  line-height: 1.4;
+  padding-top: 90px; /* barra fija (paginas internas) */
 }
 
-/* Títulos */
-.menu-title,
-.menu-section h2,
-.card h3 {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 800;
+/* ===== PORTADA (INDEX) ===== */
+.cover {
+  background: white;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
 }
 
-/* Botones */
-.menu-btn.big,
-.nav-btn,
-.back-btn,
+.cover-inner {
+  width: 100%;
+  max-width: 420px;
+  height: 95vh;
+
+  background-image: url('portada.jpg');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  border: 10px solid #e63b5b;
+  border-radius: 22px;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.lang-bar {
+  margin-bottom: 28px;
+  display: flex;
+  gap: 18px;
+}
+
 .lang-btn {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
+  background: white;
+  color: #7a2e6d; /* violeta del logo */
+  border: none;
+
+  padding: 16px 28px;
+  border-radius: 30px;
+
+  font-weight: bold;
+  font-size: 18px;
+  cursor: pointer;
+
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
 }
 
-  /* ===== PROMOS ===== */
-  if (path.includes("promos.html")) {
-    fetch("promos.json")
-      .then(res => {
-        if (!res.ok) throw new Error("No se pudo cargar promos.json");
-        return res.json();
-      })
-      .then(data => {
-        data.promos.forEach(item => {
-          const card = document.createElement("div");
-          card.className = "card";
-          card.innerHTML = `
-            <div class="promo-badge">PROMO</div>
-            <h3>${item.nombre}</h3>
-            <p>${item.descripcion}</p>
-            <div class="price">$ ${Number(item.precio).toLocaleString("es-AR")}</div>
-          `;
-          container.appendChild(card);
-        });
-      })
-      .catch(err => {
-        container.innerHTML = "<p>Error cargando promos</p>";
-        console.error(err);
-      });
-    return;
+/* ===== SOLO INDEX (si usas body class="page-index") ===== */
+.page-index {
+  background: white;
+  padding-top: 0; /* sin barra */
+}
+
+.page-index .cover {
+  background: white;
+  padding: 16px;
+}
+
+.page-index .cover-inner {
+  border: none;       /* si querés SIN marco en index */
+  border-radius: 0;
+}
+
+.page-index .lang-btn {
+  background: #e63b5b;
+  color: white;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+/* ===== BARRA SUPERIOR ===== */
+.top-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+
+  background: #e63b5b;
+  padding: 26px 20px;
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.nav-btn,
+.back-btn {
+  background: #ffd966;
+  border: none;
+  padding: 16px 26px;
+  border-radius: 28px;
+  font-weight: bold;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+/* ===== CONTENEDOR ===== */
+.container {
+  padding: 20px;
+}
+
+/* IMPORTANT: usamos clase, no solo #id */
+.menu-content,
+#menu-content {
+  max-width: 720px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* ===== MENU HOME (menu.html) ===== */
+.menu-home {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* ===== MARCO / CARD MENU PRINCIPAL ===== */
+.menu-card {
+  background: #f6dcb5;              /* MISMO color que el fondo */
+  border: 4px solid #e63b5b;        /* marco rosa */
+  border-radius: 26px;
+
+  padding: 32px 26px;
+  width: 100%;
+  max-width: 420px;
+
+  box-shadow: 0 8px 20px rgba(230, 59, 91, 0.25);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+
+.menu-logo {
+  width: 109px;
+  max-width: 40%;
+  margin-bottom: 18px;
+  border-radius: 14px;
+}
+
+.menu-title {
+  font-size: 38px;
+  font-weight: 900;
+  color: #e63b5b;
+  margin-bottom: 18px;
+  text-align: center;
+  letter-spacing: 0.5px;
+}
+
+.menu-title::after {
+  content: "";
+  display: block;
+  width: 70px;
+  height: 6px;
+  margin: 10px auto 0;
+  background: #ffd1dc;
+  border-radius: 10px;
+}
+
+/* botones menu */
+.menu-choice {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;   /* 👈 centra los botones */
+}
+
+
+.menu-btn.big {
+  width: 100%;
+  max-width: 300px;
+  padding: 22px;
+  font-size: 20px;
+  border-radius: 32px;
+  background: #e63b5b;
+  color: white;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* ===== PROMOS ===== */
+.card {
+  position: relative;
+  background: #fff3dc;
+  border-radius: 24px;
+  padding: 24px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.card h3 {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.card p {
+  font-size: 16px;
+  margin-bottom: 14px;
+}
+
+.promo-badge {
+  position: absolute;
+  top: -12px;
+  left: 16px;
+
+  background: #4cc7b0;
+  color: white;
+
+  font-size: 12px;
+  font-weight: bold;
+  padding: 6px 12px;
+
+  border-radius: 14px;
+  letter-spacing: 0.5px;
+}
+
+.card .price {
+  font-size: 22px;
+  font-weight: bold;
+  color: #e63b5b;
+  text-align: right;
+}
+
+/* ===== DULCES / SALADOS / CAFETERÍA ===== */
+.menu-section {
+  background: #fff3dc;
+  border-radius: 24px;
+  padding: 22px;
+  margin-bottom: 22px;
+}
+
+.menu-section h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  border-bottom: 3px solid #e63b5b;
+  padding-bottom: 6px;
+}
+
+.menu-section ul {
+  list-style: none;
+}
+
+.menu-section li {
+  display: flex;
+  justify-content: flex-start; /* 👈 ya no los separa a los extremos */
+  gap: 16px;                   /* 👈 controla la distancia */
+  padding: 10px 0;
+  font-size: 18px;
+}
+
+
+.menu-section .price {
+  font-weight: bold;
+}
+
+/* ===== CAFETERÍA: sabores y badges (si los usas) ===== */
+.menu-item {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.flavors {
+  list-style: none;
+  padding: 0;
+  margin: 6px 0 10px;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 6px 12px;
+}
+
+.flavors li {
+  font-size: 15px;
+  background: rgba(230, 59, 91, 0.08);
+  padding: 6px 10px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.badges {
+  margin: 6px 0;
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.badge {
+  font-size: 12px;
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-weight: bold;
+  color: white;
+}
+
+.badge.top { background: #f5a623; }
+.badge.wow { background: #e63b5b; }
+.badge.hot { background: #ff7043; }
+.badge.cold { background: #4fc3f7; }
+
+/* ===== BOTONES CHICOS SOLO EN CAFETERÍA (si usas body class="cafeteria-page") ===== */
+.cafeteria-page .nav-btn,
+.cafeteria-page .back-btn {
+  padding: 10px 16px;
+  font-size: 14px;
+  border-radius: 18px;
+}
+
+/* ===== LOGO ANIMADO CON GLOW ===== */
+.pulse-glow {
+  animation: pulseGlow 2.8s ease-in-out infinite;
+  border-radius: 16px;
+}
+
+@keyframes pulseGlow {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 rgba(230, 59, 91, 0);
+  }
+  50% {
+    transform: scale(1.06);
+    box-shadow:
+      0 0 18px rgba(230, 59, 91, 0.35),
+      0 0 35px rgba(230, 59, 91, 0.25);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 rgba(230, 59, 91, 0);
+  }
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 480px) {
+  body {
+    font-size: 16px;
   }
 
-  /* ===== DULCES / SALADOS ===== */
-  let jsonFile = "";
-  let rootKey = "";
-
-  if (path.includes("dulces.html")) {
-    jsonFile = "dulces.json";
-    rootKey = "dulces";
-  } else if (path.includes("salados.html")) {
-    jsonFile = "salados.json";
-    rootKey = "salados";
-  } else {
-    return;
+  .menu-title {
+    font-size: 28px;
   }
 
-  fetch(jsonFile)
-    .then(res => {
-      if (!res.ok) throw new Error(`No se pudo cargar ${jsonFile}`);
-      return res.json();
-    })
-    .then(data => {
-      data[rootKey].forEach(section => {
-        const block = document.createElement("div");
-        block.className = "menu-section";
+  .menu-btn.big {
+    font-size: 18px;
+    padding: 18px;
+  }
 
-        let html = `<h2>${section.categoria}</h2>`;
+  .top-bar {
+    padding: 18px 14px;
+    gap: 10px;
+  }
 
-        if (section.nota) {
-          html += `<p class="note">${section.nota}</p>`;
-        }
+  .nav-btn,
+  .back-btn {
+    font-size: 14px;
+    padding: 10px 14px;
+    border-radius: 18px;
+  }
 
-        html += `<ul>`;
-        section.items.forEach(item => {
-          html += `
-            <li>
-              <span>${item.nombre}</span>
-              <span class="price">
-                ${item.precio !== null ? "$ " + Number(item.precio).toLocaleString("es-AR") : ""}
-              </span>
-            </li>
-          `;
-        });
-        html += `</ul>`;
+  .flavors {
+    grid-template-columns: 1fr;
+  }
+}
 
-        block.innerHTML = html;
-        container.appendChild(block);
-      });
-    })
-    .catch(err => {
-      container.innerHTML = "<p>Error cargando menú</p>";
-      console.error(err);
-    });
-});
